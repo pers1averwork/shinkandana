@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-31",
+  "publishers": [
+    {
+      "name": "集英社",
+      "titles": [
+        {
+          "title": "潮風のヨル 8巻",
+          "author": "灯里 まひろ",
+          "price": "715円",
+          "amazon": "https://www.amazon.co.jp/",
+          "rakuten": "https://books.rakuten.co.jp/"
+        },
+        {
+          "title": "鉄塔のシズク 3巻",
+          "author": "河野 セイ",
+          "price": "660円",
+          "amazon": "https://www.amazon.co.jp/",
+          "rakuten": "https://books.rakuten.co.jp/"
+        }
+      ]
+    },
+    {
+      "name": "講談社",
+      "titles": [
+        {
+          "title": "夜明けのバレル 12巻",
+          "author": "神代 リク",
+          "price": "748円",
+          "amazon": "https://www.amazon.co.jp/",
+          "rakuten": "https://books.rakuten.co.jp/"
+        }
+      ]
+    },
+    {
+      "name": "小学館",
+      "titles": [
+        {
+          "title": "月光ガレージ 1巻",
+          "author": "白井 ノゾミ",
+          "price": "693円",
+          "amazon": "https://www.amazon.co.jp/",
+          "rakuten": "https://books.rakuten.co.jp/"
+        },
+        {
+          "title": "紙ひこうきの街 5巻",
+          "author": "水無瀬 トウカ",
+          "price": "649円",
+          "amazon": "https://www.amazon.co.jp/",
+          "rakuten": "https://books.rakuten.co.jp/"
+        }
+      ]
+    }
+  ]
+}

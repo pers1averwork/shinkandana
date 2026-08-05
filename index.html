@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>けさの新刊棚 | 今日発売のコミック新刊まとめ</title>
+<meta name="description" content="出版社別に今日発売のコミック新刊をまとめて紹介するサイトです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ECE8DE;
+    --paper-deep: #E1DCCE;
+    --ink: #1F2A44;
+    --ink-soft: #4A5468;
+    --stamp-red: #C33C2E;
+    --line: #C9C2AE;
+    --tag-a: #6B7A5E;
+    --tag-b: #B4832A;
+    --tag-c: #7A5B8C;
+    --tag-d: #3E7C8C;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image:
+      linear-gradient(var(--paper) 1px, transparent 1px),
+      linear-gradient(90deg, var(--paper) 1px, transparent 1px);
+    color: var(--ink);
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+
+  a { color: inherit; }
+
+  /* --- 上部：アフィリエイト表記バナー --- */
+  .disclosure {
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 6px 12px;
+    letter-spacing: 0.02em;
+  }
+
+  /* --- ヘッダー --- */
+  header {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 56px 24px 40px;
+    text-align: center;
+  }
+
+  .site-title {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: 0.06em;
+    margin: 0;
+  }
+
+  .site-sub {
+    margin: 10px 0 0;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+
+  /* 判子風の日付スタンプ */
+  .stamp {
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    width: 108px;
+    height: 108px;
+    border: 3px solid var(--stamp-red);
+    border-radius: 50%;
+    color: var(--stamp-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-9deg);
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+  }
+  .stamp .y { font-size: 0.72rem; display: block; }
+  .stamp .md { font-size: 1.35rem; display: block; }
+  .stamp .dow { font-size: 0.72rem; display: block; }
+
+  @media (max-width: 640px) {
+    .stamp { position: static; margin: 20px auto 0; }
+  }
+
+  /* --- 目次（出版社アンカー） --- */
+  nav.toc {
+    max-width: 960px;
+    margin: 0 auto 8px;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  nav.toc a {
+    text-decoration: none;
+    font-size: 0.82rem;
+    padding: 5px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink-soft);
+    background: var(--paper-deep);
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 24px 80px;
+  }
+
+  /* --- 出版社セクション --- */
+  .publisher {
+    margin-top: 52px;
+    scroll-margin-top: 20px;
+  }
+
+  .publisher-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .publisher-head .bar {
+    width: 10px;
+    height: 22px;
+    background: var(--accent, var(--tag-a));
+    flex: none;
+  }
+
+  .publisher-head h2 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.4rem;
+    margin: 0;
+    letter-spacing: 0.03em;
+  }
+
+  .publisher-head .count {
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+  }
+
+  .titles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 18px;
+  }
+
+  .card {
+    background: #F5F2E9;
+    border: 1px solid var(--line);
+    display: flex;
+    overflow: hidden;
+  }
+
+  .card .spine {
+    width: 12px;
+    flex: none;
+    background: var(--accent, var(--tag-a));
+  }
+
+  .card .body {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .card .title {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .card .author {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  .card .price {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+
+  .card .links {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+  }
+
+  .card .links a {
+    text-decoration: none;
+    font-size: 0.78rem;
+    text-align: center;
+    padding: 7px 0;
+    flex: 1;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .card .links a:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .empty, .error {
+    text-align: center;
+    color: var(--ink-soft);
+    padding: 60px 20px;
+  }
+
+  /* --- フッター：規約系 --- */
+  footer {
+    border-top: 1px solid var(--line);
+    background: var(--paper-deep);
+    padding: 48px 24px 60px;
+  }
+
+  footer .inner {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  footer h3 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 1rem;
+    margin: 28px 0 8px;
+  }
+  footer h3:first-child { margin-top: 0; }
+
+  footer p {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin: 0 0 6px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="disclosure">
+    本サイトはAmazonアソシエイト・プログラム及び楽天アフィリエイトの参加者であり、商品の購入により収益を得ることがあります。
+  </div>
+
+  <header>
+    <p class="site-sub">出版社別・今日発売のコミック新刊まとめ</p>
+    <h1 class="site-title">けさの新刊棚</h1>
+    <div class="stamp" id="dateStamp">
+      <span class="y">20—</span>
+      <span class="md">–/–</span>
+      <span class="dow">(–)</span>
+    </div>
+  </header>
+
+  <nav class="toc" id="toc"></nav>
+
+  <main id="main">
+    <div class="empty">読み込み中…</div>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <h3>アフィリエイト表記</h3>
+      <p>当サイトは、Amazon.co.jpを宣伝しリンクすることによって収入を得ることができる仕組みである、Amazonアソシエイト・プログラムの参加者です。また、楽天グループ株式会社が運営する「楽天アフィリエイト」の参加者でもあります。掲載されている商品リンクを経由して商品が購入された場合、当サイトに紹介料が支払われることがあります。</p>
+
+      <h3>プライバシーポリシー</h3>
+      <p>当サイトでは、アクセス解析のためGoogleアナリティクス等のツールを使用する場合があります。これらのツールはトラフィックデータの収集のためにCookieを使用しますが、このデータは匿名で収集されており、個人を特定するものではありません。</p>
+
+      <h3>免責事項</h3>
+      <p>当サイトに掲載している情報は、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていたりすることがあります。当サイトの情報を利用したことによって生じたいかなる損害についても、一切の責任を負いかねますのでご了承ください。書影・商品情報の著作権は各出版社・販売元に帰属します。</p>
+
+      <p class="copyright">&copy; <span id="year"></span> けさの新刊棚</p>
+    </div>
+  </footer>
+
+<script>
+  // ---- サンプルデータ（data.json が用意され次第、自動的にそちらを優先して読み込みます）----
+  const SAMPLE_DATA = {
+    "date": "2026-07-31",
+    "publishers": [
+      {
+        "name": "集英社",
+        "titles": [
+          { "title": "潮風のヨル 8巻", "author": "灯里 まひろ", "price": "715円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" },
+          { "title": "鉄塔のシズク 3巻", "author": "河野 セイ", "price": "660円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" }
+        ]
+      },
+      {
+        "name": "講談社",
+        "titles": [
+          { "title": "夜明けのバレル 12巻", "author": "神代 リク", "price": "748円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" }
+        ]
+      },
+      {
+        "name": "小学館",
+        "titles": [
+          { "title": "月光ガレージ 1巻", "author": "白井 ノゾミ", "price": "693円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" },
+          { "title": "紙ひこうきの街 5巻", "author": "水無瀬 トウカ", "price": "649円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" }
+        ]
+      }
+    ]
+  };
+
+  const ACCENTS = ["var(--tag-a)", "var(--tag-b)", "var(--tag-c)", "var(--tag-d)"];
+  const DOW = ["日", "月", "火", "水", "木", "金", "土"];
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function renderStamp(dateStr) {
+    const d = dateStr ? new Date(dateStr + "T00:00:00") : new Date();
+    const stamp = document.getElementById("dateStamp");
+    stamp.querySelector(".y").textContent = d.getFullYear() + "年";
+    stamp.querySelector(".md").textContent = (d.getMonth() + 1) + "/" + d.getDate();
+    stamp.querySelector(".dow").textContent = "(" + DOW[d.getDay()] + ")";
+  }
+
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, s => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[s]));
+  }
+
+  function render(data) {
+    renderStamp(data.date);
+
+    const main = document.getElementById("main");
+    const toc = document.getElementById("toc");
+    main.innerHTML = "";
+    toc.innerHTML = "";
+
+    if (!data.publishers || data.publishers.length === 0) {
+      main.innerHTML = '<div class="empty">本日の新刊情報はまだ登録されていません。</div>';
+      return;
+    }
+
+    data.publishers.forEach((pub, i) => {
+      const accent = ACCENTS[i % ACCENTS.length];
+      const anchorId = "pub-" + i;
+
+      const tocLink = document.createElement("a");
+      tocLink.href = "#" + anchorId;
+      tocLink.textContent = pub.name;
+      toc.appendChild(tocLink);
+
+      const section = document.createElement("section");
+      section.className = "publisher";
+      section.id = anchorId;
+      section.style.setProperty("--accent", accent);
+
+      const titlesHtml = pub.titles.map(t => `
+        <div class="card">
+          <div class="spine"></div>
+          <div class="body">
+            <div class="title">${escapeHtml(t.title)}</div>
+            <div class="author">${escapeHtml(t.author || "")}</div>
+            <div class="price">${escapeHtml(t.price || "")}</div>
+            <div class="links">
+              ${t.amazon ? `<a href="${t.amazon}" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>` : ""}
+              ${t.rakuten ? `<a href="${t.rakuten}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>` : ""}
+            </div>
+          </div>
+        </div>
+      `).join("");
+
+      section.innerHTML = `
+        <div class="publisher-head" style="--accent:${accent}">
+          <span class="bar"></span>
+          <h2>${escapeHtml(pub.name)}</h2>
+          <span class="count">${pub.titles.length}冊</span>
+        </div>
+        <div class="titles">${titlesHtml}</div>
+      `;
+      main.appendChild(section);
+    });
+  }
+
+  // data.json があればそちらを優先。無ければ同梱のサンプルで表示。
+  fetch("./data.json", { cache: "no-store" })
+    .then(res => { if (!res.ok) throw new Error("no data.json"); return res.json(); })
+    .then(render)
+    .catch(() => render(SAMPLE_DATA));
+</script>
+</body>
+</html>
