@@ -206,16 +206,18 @@
 
   .card .links {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: auto;
   }
 
   .card .links a {
     text-decoration: none;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     text-align: center;
-    padding: 7px 0;
-    flex: 1;
+    padding: 7px 8px;
+    flex: 1 1 calc(50% - 8px);
+    min-width: 90px;
     border: 1px solid var(--ink);
     color: var(--ink);
     transition: background 0.15s, color 0.15s;
@@ -310,21 +312,21 @@
       {
         "name": "集英社",
         "titles": [
-          { "title": "潮風のヨル 8巻", "author": "灯里 まひろ", "price": "715円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" },
-          { "title": "鉄塔のシズク 3巻", "author": "河野 セイ", "price": "660円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" }
+          { "title": "潮風のヨル 8巻", "author": "灯里 まひろ", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/", "kindle": "https://www.amazon.co.jp/" },
+          { "title": "鉄塔のシズク 3巻", "author": "河野 セイ", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/", "kindle": "https://www.amazon.co.jp/" }
         ]
       },
       {
         "name": "講談社",
         "titles": [
-          { "title": "夜明けのバレル 12巻", "author": "神代 リク", "price": "748円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" }
+          { "title": "夜明けのバレル 12巻", "author": "神代 リク", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/", "kindle": "https://www.amazon.co.jp/" }
         ]
       },
       {
         "name": "小学館",
         "titles": [
-          { "title": "月光ガレージ 1巻", "author": "白井 ノゾミ", "price": "693円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" },
-          { "title": "紙ひこうきの街 5巻", "author": "水無瀬 トウカ", "price": "649円", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/" }
+          { "title": "月光ガレージ 1巻", "author": "白井 ノゾミ", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/", "kindle": "https://www.amazon.co.jp/" },
+          { "title": "紙ひこうきの街 5巻", "author": "水無瀬 トウカ", "amazon": "https://www.amazon.co.jp/", "rakuten": "https://books.rakuten.co.jp/", "kindle": "https://www.amazon.co.jp/" }
         ]
       }
     ]
@@ -382,9 +384,9 @@
           <div class="body">
             <div class="title">${escapeHtml(t.title)}</div>
             <div class="author">${escapeHtml(t.author || "")}</div>
-            <div class="price">${escapeHtml(t.price || "")}</div>
             <div class="links">
               ${t.amazon ? `<a href="${t.amazon}" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>` : ""}
+              ${t.kindle ? `<a href="${t.kindle}" target="_blank" rel="nofollow sponsored noopener">Kindleで見る</a>` : ""}
               ${t.rakuten ? `<a href="${t.rakuten}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>` : ""}
             </div>
           </div>
