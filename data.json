@@ -1,355 +1,12 @@
 {
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "publishers": [
-    {
-      "name": "KADOKAWA",
-      "titles": [
-        {
-          "title": "この素晴らしい世界に祝福を! 23",
-          "author": "渡真仁 / 三嶋くろね / 暁なつめ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ぬきたしR 3",
-          "author": "まめおじたん / Qruppo",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "アフタヌーンティーはいかがですか? 私と先輩の、不純で一途なふたり暮らし 1",
-          "author": "桃田ロウ / 文尾文 / 塩こうじ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ゲーム オブ ファミリアー −家族戦記− 17",
-          "author": "山口ミコト / D.P",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ハニートラップ・シェアハウス 9",
-          "author": "久慈マサムネ / 神月洸壱",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "不死を求める者、これを道士と呼ぶ 1",
-          "author": "月汰元 / 高鳥シンゴ / 武田ほたる",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "不純な彼女達は懺悔しない 5",
-          "author": "ポロロッカ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "世界を救うために亜人と朝チュンできますか? 10",
-          "author": "音井れこ丸",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "乙女ゲー世界はモブに厳しい世界です【共和国編】 2巻",
-          "author": "三嶋与夢 / 行々狸 / 孟達 / マツリセイシロウ / FTops",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "友達んちの姉ちゃんが怖くていい人 1",
-          "author": "ミケヤナ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "大江戸イノベーション 二",
-          "author": "樋田よしなり / 山村竜也",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "特許やぶりの女王 弁理士・大鳳未来 1",
-          "author": "南原詠 / ヤマモトマナブ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "田舎で恋は難しい!? 1",
-          "author": "ねこうめ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "男爵無双 貴族嫌いの青年が田舎貴族に転生した件 2",
-          "author": "水底草原 / 草野紅壱 / Noy",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "私、蜘蛛なモンスターをテイムしたので、スパイダーシルクで裁縫を頑張ります! 3",
-          "author": "あきさけ / さんねこ / タムラヨウ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "美人女上司滝沢さん 10",
-          "author": "やんBARU",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        }
-      ]
-    },
-    {
-      "name": "秋田書店",
-      "titles": [
-        {
-          "title": "BREAK BACK 25",
-          "author": "KASA",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "お葉花を愛でる 4",
-          "author": "柴田賢志郎",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "まりも兄弟の茶飯事 10",
-          "author": "蔵人幸明 / イトノコ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ウシミツガオ 3",
-          "author": "板垣巴留",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "カンピオーニ 3",
-          "author": "荒達哉",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ガブ 6",
-          "author": "植木陽介",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ガールズ×ヴァンパイア 1",
-          "author": "みかみてれん / 千種みのり",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "キミに恋する三姉妹 9",
-          "author": "saku",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "タイカの理性 7",
-          "author": "板垣巴留",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "チキン 「ドロップ」前夜の物語 48",
-          "author": "井口達也 / 歳脇将幸",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ナインピークス NINE PEAKS 20",
-          "author": "平川哲弘",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ババンババンバンバンパイア 14",
-          "author": "奥嶋ひろまさ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ヤンキーJKクズハナちゃん 32",
-          "author": "宗我部としのり",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "弱虫ペダル SPARE BIKE 16",
-          "author": "渡辺航",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "杉雪カコと見たい明日 4",
-          "author": "ノッツ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "火喰鳥 羽州ぼろ鳶組 6",
-          "author": "今村翔吾 / 瀬口忍",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "田舎ではじめる休活スローライフ 〜ちょっと仕事辞めて実家に帰るわ〜 1",
-          "author": "錬金王 / かぶお",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "追放僧侶の賢者タイム 2",
-          "author": "野原のはて / 鈴木シオン",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "閻魔の教室 6",
-          "author": "田中優吏",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "WORST外伝 グリコ 39",
-          "author": "高橋ヒロシ / 鈴木リュータ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "聖闘士星矢 Final Edition 15",
-          "author": "車田正美",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        }
-      ]
-    },
     {
       "name": "講談社",
       "titles": [
         {
-          "title": "アオバノバスケ 12",
-          "author": "学慶人",
+          "title": "みんな蛍を殺したかった 1",
+          "author": "瀬戸さとみ / 木爾チレン / 紺野真弓",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -357,8 +14,8 @@
           "kobo": ""
         },
         {
-          "title": "ウィッチクラフトワークス EXTRA 5",
-          "author": "水薙竜",
+          "title": "よくわからないけれど異世界に転生していたようです 32",
+          "author": "内々けやき / あし / カオミン",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -366,8 +23,8 @@
           "kobo": ""
         },
         {
-          "title": "ガラス工房の錬金術師 3",
-          "author": "樺ユキ / 佐倉真稀 / LINO",
+          "title": "ジャンクシュート 1",
+          "author": "西尾カズミ",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -375,8 +32,8 @@
           "kobo": ""
         },
         {
-          "title": "今夜もシリアルキラーと待ち合わせ 5",
-          "author": "伊口紺 / 中村優児",
+          "title": "スキル【万物支配】に目覚めたおっさんは、ダンジョンで生計を立てることにしました 3",
+          "author": "原田臙 / 岸本和葉 / シミズヒロノリ / 吉武",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -384,8 +41,8 @@
           "kobo": ""
         },
         {
-          "title": "異世界ロイヤルロワイアル 〜18人の花嫁候補〜 3",
-          "author": "若宮弘明 / 宮沢わたる",
+          "title": "ブーツレグ 8",
+          "author": "ヤスダスズヒト",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -393,8 +50,8 @@
           "kobo": ""
         },
         {
-          "title": "ひめごとかくしごと 1",
-          "author": "つくものい",
+          "title": "ポンコツ風紀委員とスカート丈が不適切なJKの話 21",
+          "author": "横田卓馬",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -402,8 +59,8 @@
           "kobo": ""
         },
         {
-          "title": "ぴゅあ0.01mm 7",
-          "author": "志岐佳衣子",
+          "title": "二周目チートの転生魔導士 8",
+          "author": "石後千鳥 / 鬱沢色素 / りいちゅ",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -411,8 +68,8 @@
           "kobo": ""
         },
         {
-          "title": "ゆーあーすらっがー 1",
-          "author": "なめたけ / 真野ろか",
+          "title": "前世が最強魔導師だった俺、異世界魔法で無双する! 1",
+          "author": "安康マイ / シミズヒロノリ / kimimaro / 刀彼方",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -420,8 +77,8 @@
           "kobo": ""
         },
         {
-          "title": "アンダーニンジャ 18",
-          "author": "花沢健吾",
+          "title": "時間停止勇者 22",
+          "author": "光永康則",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -429,8 +86,8 @@
           "kobo": ""
         },
         {
-          "title": "ゲーム中盤で死ぬ悪役貴族に転生したので、外れスキル【テイム】を駆使して最強を目指してみた 7",
-          "author": "八又ナガト / 月山可也",
+          "title": "殲滅特区 -怪獣関連犯罪録- 2",
+          "author": "大倉崇裕 / 矢島司規",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -438,8 +95,8 @@
           "kobo": ""
         },
         {
-          "title": "パリピ孔明 26",
-          "author": "四葉夕卜 / 小川亮",
+          "title": "独身貴族は異世界を謳歌する 8",
+          "author": "駒鳥ひわ / 錬金王 / 三登いつき",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -447,8 +104,8 @@
           "kobo": ""
         },
         {
-          "title": "ヤニねこ 13",
-          "author": "にゃんにゃんファクトリー",
+          "title": "笹森くんのスカート",
+          "author": "戸成ユウ / 神戸遥真",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -456,8 +113,8 @@
           "kobo": ""
         },
         {
-          "title": "ラットコレクティブ 1",
-          "author": "大村知空",
+          "title": "絶対死なないステラ姫 6",
+          "author": "光永康則 / 大高稲",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -465,8 +122,8 @@
           "kobo": ""
         },
         {
-          "title": "ローワライ 2",
-          "author": "雪野朝哉",
+          "title": "転生したらスライムだった件 クレイマンREVENGE 9",
+          "author": "カジカ航 / 伏瀬 / みっつばー",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -474,8 +131,8 @@
           "kobo": ""
         },
         {
-          "title": "伍と碁 7",
-          "author": "蓮尾トウト / 仲里はるな",
+          "title": "転生したらスライムだった件 異聞 〜魔国暮らしのトリニティ〜 14",
+          "author": "戸野タエ / 伏瀬 / みっつばー",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -483,8 +140,8 @@
           "kobo": ""
         },
         {
-          "title": "到達のアクタ 5",
-          "author": "信楽優楽",
+          "title": "魔法少女リリカルなのはEXCEEDS 3",
+          "author": "都築真紀 / 川上修一",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -492,8 +149,8 @@
           "kobo": ""
         },
         {
-          "title": "妹は知っている 8",
-          "author": "雁木万里",
+          "title": "FAIRY TAIL 100 YEARS QUEST 24",
+          "author": "真島ヒロ / 上田敦夫",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -501,8 +158,8 @@
           "kobo": ""
         },
         {
-          "title": "平成敗残兵すみれちゃん 11",
-          "author": "里見U",
+          "title": "K-9 警視庁公安部公安第9課異能対策係 7",
+          "author": "奧山哲矢",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -510,8 +167,8 @@
           "kobo": ""
         },
         {
-          "title": "彼岸島 48日後… 55",
-          "author": "松本光司",
+          "title": "中華一番!極 22",
+          "author": "小川悦司",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -519,8 +176,8 @@
           "kobo": ""
         },
         {
-          "title": "社長と酒と星 8",
-          "author": "ずり騎士",
+          "title": "杖と剣のウィストリア 16",
+          "author": "大森藤ノ / 青井聖",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -528,8 +185,8 @@
           "kobo": ""
         },
         {
-          "title": "税金で買った本 20",
-          "author": "ずいの / 系山冏",
+          "title": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。13",
+          "author": "ユーリ / 右薙光介 / すーぱーぞんび",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -537,8 +194,328 @@
           "kobo": ""
         },
         {
-          "title": "グラぱらっ! 13",
-          "author": "桂あいり / 西木田景志",
+          "title": "Destiny Unchain Online 13",
+          "author": "ヤチモト / resn",
+          "price": "792円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18711377/",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "GURU 3",
+          "author": "陣ノ内康暉",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "その青春 3",
+          "author": "信楽大賀",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "ともだちづくり 3",
+          "author": "江渡ピリカ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "イエティ、とある日々 2",
+          "author": "羊羊",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "ギルティサークル 21",
+          "author": "山本やみー / 門馬司",
+          "price": "792円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18692306/",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "ジュミドロ 9",
+          "author": "瀧宏一",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "ハナバス 苔石花江のバスケ論 7",
+          "author": "三好宏平",
+          "price": "792円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18692323/",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "世界最強の魔女、始めました 13",
+          "author": "戸賀環 / 坂木持丸 / riritto",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "人狼とエルフ 1",
+          "author": "蒼井万里",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "人生逆転ダンジョン 4",
+          "author": "尾張ニコ / どすこい花丸様",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "信じていた仲間達にダンジョン奥地で殺されかけたが 23",
+          "author": "大前貴史 / 明鏡シスイ / tef",
+          "price": "792円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18692313/",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "昔取ったきねづかで…と言いながら無双する定食屋のおっさん 2",
+          "author": "九頭七尾 / 肝匠",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "生まれた直後から最強悪霊と脳内バトルしてたら魔力量が測定可能域を超えてました 3",
+          "author": "田崎辰 / 広路なゆる / 片瀬ぼの",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "異世界ウォーキング 14",
+          "author": "あるくひと / 小川慧 / ゆーにっと",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "白鳥運子は31画 3",
+          "author": "松明明利 / ますやまある",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "転生したら第七王子だったので、気ままに魔術を極めます 24",
+          "author": "石沢庸介 / 謙虚なサークル / メル。",
+          "price": "825円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18692314/",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。21",
+          "author": "業務用餅 / 六志麻あさ / kisui",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "追放された転生王子、『自動製作』スキルで領地を爆速で開拓し最強の村を作ってしまう 8",
+          "author": "熊乃げん骨 / ダイチ / 転",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "魔女と傭兵 9",
+          "author": "宮木真人 / 超法規的かえる / 叶世べんち",
+          "price": "792円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18692318/",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "黄昏町プリズナーズ 5",
+          "author": "ショーキ名古屋 / 藤モロホシ",
+          "price": "792円",
+          "amazon": "",
+          "rakuten": "https://books.rakuten.co.jp/rb/18692307/",
+          "kindle": "",
+          "kobo": ""
+        }
+      ]
+    },
+    {
+      "name": "KADOKAWA",
+      "titles": [
+        {
+          "title": "ダッフルコートアーミー 3",
+          "author": "吾嬬竜孝",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "不死たる異端者と災いの竜姫 1",
+          "author": "藤本キシノ / 嶋野夕陽",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "創造錬金術師は自由を謳歌する 7",
+          "author": "千月さかき / 姫乃タカ / かぼちゃ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "天才美少女三姉妹は居候にだけちょろ可愛い。1",
+          "author": "絢瀬あとり / 秋月月日 / 塩かずのこ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "戦車の飼い方 2",
+          "author": "明け方とばり",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "旗本改革男 〜令和のサラリーマン、お江戸に転生してべらぼう世直し〜 1",
+          "author": "荒吐巌 / 公社",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "月はヒツジを数えない 3",
+          "author": "桜木蓮",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "極剣のスラッシュ 2",
+          "author": "rioka / 天然水珈琲 / 灯",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "貴族の三男、でくの坊から最強魔術士へ。1",
+          "author": "嗚汐ユウ / 萩鵜アキ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "ガラノノガラ 上",
+          "author": "ナコ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "ここ、成仏やってます 2",
+          "author": "しけたいぬ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "メオトデサファリ 3",
+          "author": "賀東招二 / 玲衣",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "人外カルテ 01 〜ようこそ幻想病院へ〜",
+          "author": "西塚em",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "僕らは恋に落ちる瀬戸際で 1",
+          "author": "星文ろの",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "追放令嬢、クラフトしながらキャンピングカーで異世界を旅します 1",
+          "author": "関口太郎 / てるゆーぬ / カオミン",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -548,399 +525,10 @@
       ]
     },
     {
-      "name": "スクウェア・エニックス",
+      "name": "小学館",
       "titles": [
         {
-          "title": "『触れられると死ぬ』と言われた私、王子に触れたら最強の大聖女になりました。ところで殿下の愛が重い 2",
-          "author": "宮之みやこ / 田嶋了",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "エルフに育てられて人類唯一の精霊術師になりました 1",
-          "author": "すかいふぁーむ / 白沢戌亥 / 輝 / 華鳥ジロー",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ドラゴンと山暮らし 休日は異世界でキャンプライフ 2",
-          "author": "EDA / しらないひとし / 村上ヒサシ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "パラノマサイト FILE25 霊感少女・黒鈴ミヲの邂逅 下巻(完)",
-          "author": "石山貴也 / 桃山ひなせ / 小林元",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "メルヘン・ガール・ランズ!!! 3(完)",
-          "author": "ユービック / アベンゼン",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ヤン先輩はひとりで生きていけない 3",
-          "author": "soon茶",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "リレイ様の門番〜さえないおじさん(36才)と姫様(11才)の世界防衛譚〜 1",
-          "author": "ヤマトヨウ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "万年Fランク【通訳】スキル持ち底辺冒険者、異種族の最強美少女たちとパーティーを組んで才能に開花し無双する 3",
-          "author": "はにゅう / 夜分長文 / 渡辺つよし / 華鳥ジロー",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "世界最強のデバフ請負人 3",
-          "author": "日之影ソラ / 淀壱",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "友達として好き 2(完)",
-          "author": "中庭羊子",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "唯一無二の精霊鍛冶師が最強の武具を創るまで 3",
-          "author": "すかいふぁーむ / nns / 峰博士",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "変わり者の底辺貴族、お人好しが高じてただ一人の宝石獣使いになる 3",
-          "author": "日之影ソラ / 白沢戌亥 / 小祭たまご / 神田タイキ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "幼馴染に陰で都合の良い男呼ばわりされた俺は、好意をリセットして普通に青春を送りたい 1",
-          "author": "野良うさぎ / 一筆ナナシ / Re岳",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "後宮のお問い合わせ窓口 〜元社畜の私が皇帝の相談相手になりました!?〜 1",
-          "author": "アベンゼン / 春夏秋冬四片",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "悪役貴族が開き直って破滅フラグを”実力”で叩き折っていたら、いつの間にかヒロイン達から英雄視されるようになった件 2",
-          "author": "楓原こうた / てにたつじ / ファルまろ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "推しから溺愛される義妹に転生しました 1",
-          "author": "和執ユラ / 成樹笹",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "推しの声帯拾いました 2",
-          "author": "9℃",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "最強タンクの迷宮攻略 15",
-          "author": "木嶋隆太 / 如月命 / さんど",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "漆黒使いの最強勇者 仲間全員に裏切られたので最強の魔物と組みます 17(完)",
-          "author": "瀬戸メグル / 木村有里 / ジョンディー",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "灰宮先輩は怖くてかわいい 3",
-          "author": "神山すむ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "燃費が悪い聖女ですが、公爵様に拾われて幸せです!(ごはん的に♪) 1",
-          "author": "狭山ひびき / 雪子 / 万波千夏",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "片田舎のおっさん、剣聖になる外伝 はじまりの魔法剣士 3",
-          "author": "佐賀崎しげる / 鍋島テツヒロ / 空路恵 / 渡辺樹",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "異世界復讐〜俺をいじめた奴らを最強スキルで支配する〜 1",
-          "author": "せなか太郎",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "私の怪談師はポンコツ可愛い 怪談収集はデートに含まれますか? 1",
-          "author": "石川扇 / 怜悧 / kodamazon",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "聖女のはずが、どうやら乗っ取られました 13",
-          "author": "吉高花 / じさま / 縞",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "聖女の姉ですが、妹のための特殊魔石や特殊薬草の採取をやめたら、隣国の魔術師様の元で幸せになりました! 3",
-          "author": "かのん / 四季童子 / 絵庭明 / 紗嶋",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "転生魔導王は、底辺職の黒魔術士が、実は最強職だと知っている 6",
-          "author": "銀翼のぞみ / Konagi",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "難攻不落の魔王城へようこそ 13",
-          "author": "御鷹穂積 / 蚕堂j1 / ユウヒ / 平石六",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "騎士に憧れた最強の剣士、騎士家系の落ちこぼれ令嬢に転生する。 2",
-          "author": "楓原こうた / 根岸真知子 / 松島菜摘",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        }
-      ]
-    },
-    {
-      "name": "双葉社",
-      "titles": [
-        {
-          "title": "スタートオーバー 1",
-          "author": "こう森",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ミイラの飼い方 23",
-          "author": "空木かける",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "小林さんちのメイドラゴン イルルは恋とかわかりません! 2",
-          "author": "クール教信者 / こめつぶ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "小林さんちのメイドラゴン カンナの日常 16",
-          "author": "クール教信者 / 木村光博",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "果ての王宮 1",
-          "author": "森下裕美 / 笑平",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "隣の部屋の女騎士は、異世界人で飲み友達 1",
-          "author": "穂尾ふくろ / 猫正宗 / 古峰るみ",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        }
-      ]
-    },
-    {
-      "name": "芳文社",
-      "titles": [
-        {
-          "title": "うちこもり妻はコスプレ配信者 2",
-          "author": "ねぎし匠美",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "へなちょこお嬢さん世話焼きオネェさん 2",
-          "author": "なつふじ雲",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "クールな氷上さんは迫りたい 2",
-          "author": "にゃけ彦",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "ニセアイホンアイ 2",
-          "author": "いくたはな",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        }
-      ]
-    },
-    {
-      "name": "竹書房",
-      "titles": [
-        {
-          "title": "ワイド版 ねえ、ぴよちゃん 夏休み",
-          "author": "青沼貴子",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        },
-        {
-          "title": "「人生見える化表」で、時間のムダがなくなりました",
-          "author": "堀内三佳",
-          "price": "",
-          "amazon": "",
-          "rakuten": "",
-          "kindle": "",
-          "kobo": ""
-        }
-      ]
-    },
-    {
-      "name": "リイド社",
-      "titles": [
-        {
-          "title": "さいとう・たかを時代劇画選集 血風",
+          "title": "ゴルゴ13 TRAITOR〜反逆者〜",
           "author": "さいとう・たかを",
           "price": "",
           "amazon": "",
@@ -949,22 +537,98 @@
           "kobo": ""
         },
         {
-          "title": "剣客商売プレミアム 家",
-          "author": "大島やすいち",
+          "title": "美味しんぼ名品集 ソース編",
+          "author": "雁屋哲",
           "price": "",
           "amazon": "",
           "rakuten": "",
           "kindle": "",
           "kobo": ""
-        }
-      ]
-    },
-    {
-      "name": "ダイヤモンド社",
-      "titles": [
+        },
         {
-          "title": "この星降る天国で",
-          "author": "板倉アユミ",
+          "title": "お嬢様はお仕置きが好き 11",
+          "author": "もりなかもなか",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "こんなの、しらない 23",
+          "author": "梨月詩",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "その男、沼につき。6",
+          "author": "相川ヒロ",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "偽りの錬金術妃は後宮の闇を解く 1",
+          "author": "三沢ケイ / 大橋薫",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "極と蕾〜極道と恋を知らない人妻と〜 6",
+          "author": "井山ゆー",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "極カノ〜極道とカノジョ〜 3",
+          "author": "しがの夷織",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "白天狗の贄嫁〜毒持ちの令嬢はかりそめの妻となる〜 2",
+          "author": "朝比奈希夜 / 田中文 / 桜花舞",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "真綿の檻 8",
+          "author": "尾崎衣良",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "神無月紫子の優雅な暇潰し 18",
+          "author": "赤石路代",
+          "price": "",
+          "amazon": "",
+          "rakuten": "",
+          "kindle": "",
+          "kobo": ""
+        },
+        {
+          "title": "空の音色 5",
+          "author": "水沢めぐみ",
           "price": "",
           "amazon": "",
           "rakuten": "",
@@ -973,5 +637,7 @@
         }
       ]
     }
+  ]
+}
   ]
 }
