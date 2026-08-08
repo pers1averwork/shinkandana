@@ -49,17 +49,17 @@ function httpsRequest(url, { method = "GET", headers = {}, body } = {}) {
 //   v3.2 (EU) → https://api.amazon.co.uk/auth/o2/token
 //   v3.3 (FE/日本) → https://api.amazon.co.jp/auth/o2/token   ← 今回はこちら
 async function getAccessToken() {
-  const payload = JSON.stringify({
+  const payload = new URLSearchParams({
     grant_type: "client_credentials",
     client_id: CREDENTIAL_ID,
     client_secret: CREDENTIAL_SECRET,
     scope: "creatorsapi::default",
-  });
+  }).toString();
 
   const { status, body } = await httpsRequest("https://api.amazon.co.jp/auth/o2/token", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       "Content-Length": Buffer.byteLength(payload),
     },
     body: payload,
