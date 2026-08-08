@@ -8,6 +8,7 @@
 //   RAKUTEN_APP_ID=xxxxxxxx node scripts/fetch-rakuten.mjs
 
 import { writeFile } from "node:fs/promises";
+import https from "node:https";
 
 const APP_ID = process.env.RAKUTEN_APP_ID;
 const ACCESS_KEY = process.env.RAKUTEN_ACCESS_KEY;
@@ -44,6 +45,25 @@ function normalizeSalesDate(salesDate) {
   return `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
 }
 
+// fetch()はブラウザ仕様に合わせてRefererヘッダーの手動指定を無視してしまうため、
+// Node標準のhttpsモジュールを使って直接リクエストを送る
+function httpsGet(url, headers) {
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      url,
+      { method: "GET", headers },
+      (res) => {
+        let body = "";
+        res.setEncoding("utf-8");
+        res.on("data", (chunk) => (body += chunk));
+        res.on("end", () => resolve({ status: res.statusCode ?? 0, body }));
+      }
+    );
+    req.on("error", reject);
+    req.end();
+  });
+}
+
 async function fetchPage(page) {
   const url = new URL("https://openapi.rakuten.co.jp/services/api/BooksBook/Search/20170404");
   url.searchParams.set("format", "json");
@@ -55,17 +75,14 @@ async function fetchPage(page) {
   url.searchParams.set("hits", "30");
   url.searchParams.set("page", String(page));
 
-  const res = await fetch(url, {
-    headers: {
-      // 「許可されたWebサイト」に登録したドメインと一致させる
-      Referer: "https://shinkandana.jp/",
-    },
+  const { status, body } = await httpsGet(url, {
+    // 「許可されたWebサイト」に登録したドメインと一致させる
+    Referer: "https://shinkandana.jp/",
   });
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`楽天API呼び出し失敗: ${res.status} ${body}`);
+  if (status < 200 || status >= 300) {
+    throw new Error(`楽天API呼び出し失敗: ${status} ${body}`);
   }
-  return res.json();
+  return JSON.parse(body);
 }
 
 async function main() {
