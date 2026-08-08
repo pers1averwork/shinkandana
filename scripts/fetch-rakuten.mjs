@@ -95,6 +95,36 @@ async function fetchPage(page, retry = 0) {
   return JSON.parse(body);
 }
 
+async function fetchKoboLink(title, retry = 0) {
+  const url = new URL("https://openapi.rakuten.co.jp/services/api/Kobo/EbookSearch/20170426");
+  url.searchParams.set("format", "json");
+  url.searchParams.set("applicationId", APP_ID);
+  url.searchParams.set("accessKey", ACCESS_KEY);
+  url.searchParams.set("affiliateId", AFFILIATE_ID);
+  url.searchParams.set("title", title);
+  url.searchParams.set("hits", "1");
+
+  const { status, body } = await httpsGet(url, {
+    Referer: "https://shinkandana.jp/",
+    Origin: "https://shinkandana.jp",
+  });
+
+  if (status === 429 && retry < 5) {
+    const waitMs = 3000 * (retry + 1);
+    await sleep(waitMs);
+    return fetchKoboLink(title, retry + 1);
+  }
+
+  if (status < 200 || status >= 300) {
+    console.log(`Kobo検索失敗（${title}）: ${status}`);
+    return "";
+  }
+
+  const data = JSON.parse(body);
+  const item = data.Items?.[0]?.Item;
+  return item ? (item.affiliateUrl || item.itemUrl || "") : "";
+}
+
 async function main() {
   const target = todayJST();
   console.log("対象日:", target);
@@ -163,9 +193,18 @@ async function main() {
 
   console.log("取得件数:", collected.length);
 
+  // それぞれのタイトルについて、楽天KoboのeBookリンクも検索して紐付ける
+  console.log("Koboリンクを検索します…");
+  const koboLinks = [];
+  for (const item of collected) {
+    const link = await fetchKoboLink(item.title);
+    koboLinks.push(link);
+    await sleep(1500);
+  }
+
   // 出版社ごとにグループ化
   const byPublisher = new Map();
-  for (const item of collected) {
+  collected.forEach((item, i) => {
     const pub = item.publisherName || "その他";
     if (!byPublisher.has(pub)) byPublisher.set(pub, []);
     byPublisher.get(pub).push({
@@ -175,13 +214,17 @@ async function main() {
       amazon: "",
       rakuten: item.affiliateUrl || item.itemUrl || "",
       kindle: "",
+      kobo: koboLinks[i] || "",
     });
-  }
+  });
 
   const publishers = Array.from(byPublisher.entries()).map(([name, titles]) => ({
     name,
     titles,
   }));
+
+  const koboFound = koboLinks.filter(Boolean).length;
+  console.log(`Koboリンク: ${koboFound}/${collected.length} 件見つかりました`);
 
   const data = { date: target, publishers };
 
