@@ -24,6 +24,7 @@ jobs:
       - name: 楽天ブックスAPIから新刊データを取得
         env:
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
           RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
         run: node scripts/fetch-rakuten.mjs
 
