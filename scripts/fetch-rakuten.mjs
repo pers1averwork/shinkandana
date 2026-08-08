@@ -83,7 +83,7 @@ async function fetchPage(page, retry = 0) {
 
   // リクエストが立て込んで429(レート制限)が返ってきた場合は、少し待って数回まで再試行する
   if (status === 429 && retry < 5) {
-    const waitMs = 2000 * (retry + 1);
+    const waitMs = 3000 * (retry + 1);
     console.log(`429が返ってきたため ${waitMs}ms 待って再試行します (${retry + 1}回目)`);
     await new Promise((r) => setTimeout(r, waitMs));
     return fetchPage(page, retry + 1);
@@ -99,32 +99,67 @@ async function main() {
   const target = todayJST();
   console.log("対象日:", target);
 
-  const collected = [];
-  let page = 1;
-  let pageCount = 1;
+  // 1回目：ページ数の全体像をつかむ
+  const first = await fetchPage(1);
+  await sleep(1500);
+  const pageCount = first.pageCount ?? 1;
+  console.log("総ページ数:", pageCount, "（全体件数:", first.count, "）");
 
-  // 新しい順に並んでいる前提で、対象日より古い発売日に達したら打ち切る
-  let reachedOlder = false;
-  do {
+  // ページ内の先頭アイテムの発売日を取得するヘルパー
+  function firstDateOnPage(data) {
+    const item = data.Items?.[0]?.Item;
+    return item ? normalizeSalesDate(item.salesDate || "") : null;
+  }
+
+  // 二分探索で「発売日が対象日以下になる、最初のページ」を探す
+  // （-releaseDateで新しい順＝未来の予約分も含めて日付が大きい順に並んでいるため）
+  let lo = 1;
+  let hi = pageCount;
+  let firstPageData = first;
+  while (lo < hi) {
+    const mid = Math.floor((lo + hi) / 2);
+    const data = mid === 1 ? firstPageData : await fetchPage(mid);
+    if (mid !== 1) await sleep(1500);
+    const d = firstDateOnPage(data);
+    if (d && d <= target) {
+      hi = mid;
+    } else {
+      lo = mid + 1;
+    }
+  }
+  console.log("境界ページ:", lo);
+
+  // 境界ページから前後数ページを実際に見て、対象日に一致するものを集める
+  const collected = [];
+  let page = Math.max(1, lo - 1);
+  let sawTarget = false;
+  let pastTarget = false;
+
+  while (page <= Math.min(pageCount, lo + 20) && !pastTarget) {
     const data = await fetchPage(page);
-    pageCount = data.pageCount ?? 1;
+    await sleep(1500);
 
     const items = data.Items ?? [];
+    let allOlderOnThisPage = items.length > 0;
+
     for (const wrap of items) {
       const item = wrap.Item;
       const normalized = normalizeSalesDate(item.salesDate || "");
       if (normalized === target) {
         collected.push(item);
-      } else if (normalized && normalized < target) {
-        reachedOlder = true;
+        sawTarget = true;
+        allOlderOnThisPage = false;
+      } else if (normalized && normalized > target) {
+        allOlderOnThisPage = false;
       }
     }
-    page += 1;
-    // APIに負荷をかけすぎないよう、リクエスト間隔を空ける（新API仕様は間隔が短いと429になりやすい）
-    if (!reachedOlder) {
-      await new Promise((r) => setTimeout(r, 1500));
+
+    // 対象日のアイテムを既に見つけたあと、このページが全部対象日より古いなら打ち切り
+    if (sawTarget && allOlderOnThisPage) {
+      pastTarget = true;
     }
-  } while (!reachedOlder && page <= pageCount && page <= 15); // 念のため最大15ページで打ち切り
+    page += 1;
+  }
 
   console.log("取得件数:", collected.length);
 
@@ -152,6 +187,10 @@ async function main() {
 
   await writeFile(new URL("../data.json", import.meta.url), JSON.stringify(data, null, 2) + "\n", "utf-8");
   console.log("data.json を更新しました。出版社数:", publishers.length);
+}
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
 }
 
 main().catch((err) => {
