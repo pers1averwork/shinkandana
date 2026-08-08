@@ -1,4 +1,124 @@
 {
   "date": "2026-08-08",
-  "publishers": []
+  "publishers": [
+    {
+      "name": "SBクリエイティブ",
+      "titles": [
+        {
+          "title": "アカデミーの天才剣士（コミック）2",
+          "author": "C.H/SeoGwando",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6890/9784815636890_1_13.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18549612%2F",
+          "kindle": ""
+        },
+        {
+          "title": "暴君皇帝と離婚します（コミック）3",
+          "author": "Josara/オユウナ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5923/9784815635923_1_12.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18612716%2F",
+          "kindle": ""
+        },
+        {
+          "title": "だから、私言ったわよね？　〜没落令嬢の案外楽しい領地改革〜 （コミック）　1",
+          "author": "屋形/みこみこ/匈歌ハトリ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1703/9784815631703_1_6.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18646626%2F",
+          "kindle": ""
+        },
+        {
+          "title": "きのした魔法工務店　異世界工法で最強の家づくりを（コミック） 4",
+          "author": "梃子山ジャンボ/長野文三郎/かぼちゃ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6555/9784815636555_1_8.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18646582%2F",
+          "kindle": ""
+        }
+      ]
+    },
+    {
+      "name": "オーバーラップ",
+      "titles": [
+        {
+          "title": "8歳から始める魔法学 6",
+          "author": "ゆうなぎ/上野夕陽/乃希",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7635/9784824017635_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683179%2F",
+          "kindle": ""
+        },
+        {
+          "title": "創成魔法の再現者 8",
+          "author": "うさとる/みわもひ/花ヶ田",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7659/9784824017659_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683181%2F",
+          "kindle": ""
+        },
+        {
+          "title": "迷宮狂走曲 3　〜エロゲ世界なのにエロそっちのけでひたすら最強を目指すモブ転生者〜",
+          "author": "ぱらボら/宮迫宗一郎/灯",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7628/9784824017628_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683180%2F",
+          "kindle": ""
+        },
+        {
+          "title": "アルドの異世界転生 2",
+          "author": "亞城シロ/ばうお/ファルまろ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7611/9784824017611_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683182%2F",
+          "kindle": ""
+        },
+        {
+          "title": "うすかわいちまいむこうがわ 1　〜婚約破棄された二度目の人生、あやかしを視る目が最強軍人を導く〜",
+          "author": "塩島れい/豆田 麦/瓜 うりた",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7666/9784824017666_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683177%2F",
+          "kindle": ""
+        },
+        {
+          "title": "麗しの皇帝陛下の番に選ばれてしまったのですが、まだ仕事がしたいので秘密です！ 3",
+          "author": "吉田しゃけ/田山 歩/鶏にく",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7673/9784824017673_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683176%2F",
+          "kindle": ""
+        },
+        {
+          "title": "無気力ニートな元神童、冒険者になる 7",
+          "author": "緑茶こいめ/ぺもぺもさん/福きつね",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7642/9784824017642_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683178%2F",
+          "kindle": ""
+        },
+        {
+          "title": "誰にも愛されなかった醜穢令嬢が幸せになるまで 4",
+          "author": "空木おむ/青季ふゆ/白谷ゆう",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7680/9784824017680_1_3.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18683175%2F",
+          "kindle": ""
+        }
+      ]
+    },
+    {
+      "name": "星海社",
+      "titles": [
+        {
+          "title": "徒然チルドレン　カラー版　8",
+          "author": "若林 稔弥",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6584/9784065446584_1_2.jpg?_ex=200x200",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18699447%2F",
+          "kindle": ""
+        }
+      ]
+    }
+  ]
 }
