@@ -71,7 +71,7 @@ async function fetchPage(page, retry = 0) {
   url.searchParams.set("accessKey", ACCESS_KEY);
   url.searchParams.set("affiliateId", AFFILIATE_ID);
   url.searchParams.set("booksGenreId", COMIC_GENRE_ID);
-  url.searchParams.set("sort", "+releaseDate"); // 発売日が新しい順
+  url.searchParams.set("sort", "-releaseDate"); // 発売日が新しい順
   url.searchParams.set("hits", "30");
   url.searchParams.set("page", String(page));
 
@@ -103,22 +103,28 @@ async function main() {
   let page = 1;
   let pageCount = 1;
 
-  // 新しい順に並んでいる前提で、対象日より古い発売日が続けて出てきたら打ち切る
+  // 新しい順に並んでいる前提で、対象日より古い発売日に達したら打ち切る
+  let reachedOlder = false;
   do {
     const data = await fetchPage(page);
     pageCount = data.pageCount ?? 1;
 
-    for (const wrap of data.Items ?? []) {
+    const items = data.Items ?? [];
+    for (const wrap of items) {
       const item = wrap.Item;
       const normalized = normalizeSalesDate(item.salesDate || "");
       if (normalized === target) {
         collected.push(item);
+      } else if (normalized && normalized < target) {
+        reachedOlder = true;
       }
     }
     page += 1;
     // APIに負荷をかけすぎないよう、リクエスト間隔を空ける（新API仕様は間隔が短いと429になりやすい）
-    await new Promise((r) => setTimeout(r, 1500));
-  } while (page <= pageCount && page <= 10); // 念のため最大10ページで打ち切り
+    if (!reachedOlder) {
+      await new Promise((r) => setTimeout(r, 1500));
+    }
+  } while (!reachedOlder && page <= pageCount && page <= 15); // 念のため最大15ページで打ち切り
 
   console.log("取得件数:", collected.length);
 
