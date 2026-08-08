@@ -55,7 +55,12 @@ async function fetchPage(page) {
   url.searchParams.set("hits", "30");
   url.searchParams.set("page", String(page));
 
-  const res = await fetch(url);
+  const res = await fetch(url, {
+    headers: {
+      // 「許可されたWebサイト」に登録したドメインと一致させる
+      Referer: "https://shinkandana.jp/",
+    },
+  });
   if (!res.ok) {
     const body = await res.text();
     throw new Error(`楽天API呼び出し失敗: ${res.status} ${body}`);
