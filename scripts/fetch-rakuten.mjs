@@ -64,7 +64,7 @@ function httpsGet(url, headers) {
   });
 }
 
-async function fetchPage(page) {
+async function fetchPage(page, retry = 0) {
   const url = new URL("https://openapi.rakuten.co.jp/services/api/BooksBook/Search/20170404");
   url.searchParams.set("format", "json");
   url.searchParams.set("applicationId", APP_ID);
@@ -80,6 +80,15 @@ async function fetchPage(page) {
     Referer: "https://shinkandana.jp/",
     Origin: "https://shinkandana.jp",
   });
+
+  // リクエストが立て込んで429(レート制限)が返ってきた場合は、少し待って数回まで再試行する
+  if (status === 429 && retry < 5) {
+    const waitMs = 2000 * (retry + 1);
+    console.log(`429が返ってきたため ${waitMs}ms 待って再試行します (${retry + 1}回目)`);
+    await new Promise((r) => setTimeout(r, waitMs));
+    return fetchPage(page, retry + 1);
+  }
+
   if (status < 200 || status >= 300) {
     throw new Error(`楽天API呼び出し失敗: ${status} ${body}`);
   }
@@ -107,8 +116,8 @@ async function main() {
       }
     }
     page += 1;
-    // APIに負荷をかけすぎないよう、リクエスト間隔を空ける
-    await new Promise((r) => setTimeout(r, 300));
+    // APIに負荷をかけすぎないよう、リクエスト間隔を空ける（新API仕様は間隔が短いと429になりやすい）
+    await new Promise((r) => setTimeout(r, 1500));
   } while (page <= pageCount && page <= 10); // 念のため最大10ページで打ち切り
 
   console.log("取得件数:", collected.length);
