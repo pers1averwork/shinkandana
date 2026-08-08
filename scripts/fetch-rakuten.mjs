@@ -76,8 +76,9 @@ async function fetchPage(page) {
   url.searchParams.set("page", String(page));
 
   const { status, body } = await httpsGet(url, {
-    // 「許可されたWebサイト」に登録したドメインと一致させる
+    // 「許可されたWebサイト」に登録したドメインと一致させる（Refererだけでは通らずOriginも必要）
     Referer: "https://shinkandana.jp/",
+    Origin: "https://shinkandana.jp",
   });
   if (status < 200 || status >= 300) {
     throw new Error(`楽天API呼び出し失敗: ${status} ${body}`);
