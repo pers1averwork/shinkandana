@@ -12,9 +12,9 @@
 import { readFile, writeFile } from "node:fs/promises";
 import https from "node:https";
 
-const CREDENTIAL_ID = process.env.AMAZON_CREDENTIAL_ID;
-const CREDENTIAL_SECRET = process.env.AMAZON_CREDENTIAL_SECRET;
-const PARTNER_TAG = process.env.AMAZON_PARTNER_TAG;
+const CREDENTIAL_ID = process.env.AMAZON_CREDENTIAL_ID?.trim();
+const CREDENTIAL_SECRET = process.env.AMAZON_CREDENTIAL_SECRET?.trim();
+const PARTNER_TAG = process.env.AMAZON_PARTNER_TAG?.trim();
 
 for (const [name, value] of Object.entries({
   AMAZON_CREDENTIAL_ID: CREDENTIAL_ID,
@@ -26,6 +26,14 @@ for (const [name, value] of Object.entries({
     process.exit(1);
   }
 }
+
+// 値そのものは一切表示せず、長さと「trimで変化したか」だけ診断用に出す
+// （Secretsのコピペミス・改行混入・値の取り違えがないか確認するため）
+const rawIdLen = process.env.AMAZON_CREDENTIAL_ID?.length ?? 0;
+const rawSecretLen = process.env.AMAZON_CREDENTIAL_SECRET?.length ?? 0;
+console.log(`診断: AMAZON_CREDENTIAL_ID 長さ=${CREDENTIAL_ID.length}（trim前=${rawIdLen}）`);
+console.log(`診断: AMAZON_CREDENTIAL_SECRET 長さ=${CREDENTIAL_SECRET.length}（trim前=${rawSecretLen}）`);
+console.log(`診断: AMAZON_PARTNER_TAG 長さ=${PARTNER_TAG.length}`);
 
 const MARKETPLACE = "www.amazon.co.jp";
 
