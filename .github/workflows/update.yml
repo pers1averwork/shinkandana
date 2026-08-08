@@ -28,6 +28,13 @@ jobs:
           RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
         run: node scripts/fetch-rakuten.mjs
 
+      - name: Amazon Creators APIで商品リンクを取得
+        env:
+          AMAZON_CREDENTIAL_ID: ${{ secrets.AMAZON_CREDENTIAL_ID }}
+          AMAZON_CREDENTIAL_SECRET: ${{ secrets.AMAZON_CREDENTIAL_SECRET }}
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+        run: node scripts/fetch-amazon.mjs
+
       - name: data.jsonをコミット・プッシュ
         run: |
           git config user.name "github-actions[bot]"
