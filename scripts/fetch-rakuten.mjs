@@ -10,9 +10,14 @@
 import { writeFile } from "node:fs/promises";
 
 const APP_ID = process.env.RAKUTEN_APP_ID;
+const ACCESS_KEY = process.env.RAKUTEN_ACCESS_KEY;
 const AFFILIATE_ID = process.env.RAKUTEN_AFFILIATE_ID;
 if (!APP_ID) {
   console.error("環境変数 RAKUTEN_APP_ID が設定されていません。");
+  process.exit(1);
+}
+if (!ACCESS_KEY) {
+  console.error("環境変数 RAKUTEN_ACCESS_KEY が設定されていません。");
   process.exit(1);
 }
 if (!AFFILIATE_ID) {
@@ -40,9 +45,10 @@ function normalizeSalesDate(salesDate) {
 }
 
 async function fetchPage(page) {
-  const url = new URL("https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404");
+  const url = new URL("https://openapi.rakuten.co.jp/services/api/BooksBook/Search/20170404");
   url.searchParams.set("format", "json");
   url.searchParams.set("applicationId", APP_ID);
+  url.searchParams.set("accessKey", ACCESS_KEY);
   url.searchParams.set("affiliateId", AFFILIATE_ID);
   url.searchParams.set("booksGenreId", COMIC_GENRE_ID);
   url.searchParams.set("sort", "+releaseDate"); // 発売日が新しい順
@@ -51,7 +57,8 @@ async function fetchPage(page) {
 
   const res = await fetch(url);
   if (!res.ok) {
-    throw new Error(`楽天API呼び出し失敗: ${res.status} ${await res.text()}`);
+    const body = await res.text();
+    throw new Error(`楽天API呼び出し失敗: ${res.status} ${body}`);
   }
   return res.json();
 }
