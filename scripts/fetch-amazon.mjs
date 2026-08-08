@@ -44,6 +44,10 @@ function httpsRequest(url, { method = "GET", headers = {}, body } = {}) {
 }
 
 // LWA(Login with Amazon)方式でアクセストークンを取得する
+// 注意：エンドポイントはCredentialのVersionによって異なる
+//   v3.1 (NA) → https://api.amazon.com/auth/o2/token
+//   v3.2 (EU) → https://api.amazon.co.uk/auth/o2/token
+//   v3.3 (FE/日本) → https://api.amazon.co.jp/auth/o2/token   ← 今回はこちら
 async function getAccessToken() {
   const payload = JSON.stringify({
     grant_type: "client_credentials",
@@ -52,7 +56,7 @@ async function getAccessToken() {
     scope: "creatorsapi::default",
   });
 
-  const { status, body } = await httpsRequest("https://api.amazon.com/auth/o2/token", {
+  const { status, body } = await httpsRequest("https://api.amazon.co.jp/auth/o2/token", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
