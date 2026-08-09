@@ -115,8 +115,16 @@ async function searchItem(token, title, retry = 0) {
 
   const data = JSON.parse(body);
   const item = data.searchResult?.items?.[0] ?? data.SearchResult?.Items?.[0];
+
+  // 最初の3件だけ、実際に返ってきたレスポンスの中身をそのままログに出す（原因調査用）
+  if (debugCount < 3) {
+    debugCount += 1;
+    console.log(`診断（${title}）ステータス=${status} レスポンス=${body.slice(0, 500)}`);
+  }
+
   return item?.detailPageUrl || item?.DetailPageURL || "";
 }
+let debugCount = 0;
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
