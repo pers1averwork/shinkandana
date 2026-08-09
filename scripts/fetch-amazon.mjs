@@ -114,16 +114,8 @@ async function searchItem(token, keywords, retry = 0) {
   }
 
   const data = JSON.parse(body);
-  const items = data.searchResult?.items ?? data.SearchResult?.Items ?? [];
-
-  if (debugCount < 3 && items.length > 0) {
-    debugCount += 1;
-    console.log(`診断（${keywords}）classifications=${JSON.stringify(items.map((it) => it.itemInfo?.classifications))}`);
-  }
-
-  return items;
+  return data.searchResult?.items ?? data.SearchResult?.Items ?? [];
 }
-let debugCount = 0;
 
 // 分類情報から「Kindle版」と「紙の本」に振り分ける
 function isKindle(it) {
@@ -183,18 +175,30 @@ function toLinks(items, title) {
   };
 }
 
-// ISBNがあれば先にISBNで検索（ほぼ一意に絞れる）。見つからなければタイトルで検索する。
+// ISBNは紙の本にしか紐づいておらずKindle版は見つからないため、
+// ISBN検索は「紙のリンクの精度を上げるため」、タイトル検索は「Kindle版を見つけるため」の
+// 両方を行い、結果を合成する（ISBN検索だけで打ち切らない）
 async function findLinks(token, title, isbn) {
+  let amazon = "";
+  let kindle = "";
+
   if (isbn) {
     const isbnItems = await searchItem(token, isbn);
     const isbnResult = toLinks(isbnItems, title);
-    if (isbnResult.amazon || isbnResult.kindle) {
-      return isbnResult;
-    }
+    amazon = isbnResult.amazon;
+    kindle = isbnResult.kindle;
     await sleep(1000);
   }
-  const titleItems = await searchItem(token, title);
-  return toLinks(titleItems, title);
+
+  // 紙・Kindleのどちらかが未確定なら、タイトル検索でも補完を試みる
+  if (!amazon || !kindle) {
+    const titleItems = await searchItem(token, title);
+    const titleResult = toLinks(titleItems, title);
+    if (!amazon) amazon = titleResult.amazon;
+    if (!kindle) kindle = titleResult.kindle;
+  }
+
+  return { amazon, kindle };
 }
 
 function sleep(ms) {
