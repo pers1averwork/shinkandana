@@ -114,8 +114,16 @@ async function searchItem(token, keywords, retry = 0) {
   }
 
   const data = JSON.parse(body);
-  return data.searchResult?.items ?? data.SearchResult?.Items ?? [];
+  const items = data.searchResult?.items ?? data.SearchResult?.Items ?? [];
+
+  if (debugCount < 3 && items.length > 0) {
+    debugCount += 1;
+    console.log(`診断（${keywords}）classifications=${JSON.stringify(items.map((it) => it.itemInfo?.classifications))}`);
+  }
+
+  return items;
 }
+let debugCount = 0;
 
 // 分類情報から「Kindle版」と「紙の本」に振り分ける
 function isKindle(it) {
