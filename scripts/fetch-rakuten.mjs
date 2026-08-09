@@ -254,6 +254,7 @@ async function main() {
       title: item.title,
       author: item.author || "",
       image: item.largeImageUrl || item.mediumImageUrl || "",
+      isbn: item.isbn || "",
       amazon: "",
       rakuten: item.affiliateUrl || item.itemUrl || "",
       kindle: "",

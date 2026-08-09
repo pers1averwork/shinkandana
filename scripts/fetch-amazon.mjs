@@ -81,13 +81,13 @@ async function getAccessToken() {
   return data.access_token;
 }
 
-async function searchItem(token, title, retry = 0) {
+async function searchItem(token, keywords, retry = 0) {
   const payload = JSON.stringify({
-    keywords: title,
+    keywords,
     partnerTag: PARTNER_TAG,
     partnerType: "Associates",
     marketplace: MARKETPLACE,
-    resources: ["itemInfo.title"],
+    resources: ["itemInfo.title", "itemInfo.classifications"],
   });
 
   const { status, body } = await httpsRequest("https://creatorsapi.amazon/catalog/v1/searchItems", {
@@ -105,30 +105,77 @@ async function searchItem(token, title, retry = 0) {
     const waitMs = 2000 * (retry + 1);
     console.log(`429が返ってきたため ${waitMs}ms 待って再試行します`);
     await sleep(waitMs);
-    return searchItem(token, title, retry + 1);
+    return searchItem(token, keywords, retry + 1);
   }
 
   if (status < 200 || status >= 300) {
-    console.log(`Amazon検索失敗（${title}）: ${status} ${body}`);
-    return "";
+    console.log(`Amazon検索失敗（${keywords}）: ${status} ${body}`);
+    return [];
   }
 
   const data = JSON.parse(body);
-  const items = data.searchResult?.items ?? data.SearchResult?.Items ?? [];
-  if (items.length === 0) return "";
+  return data.searchResult?.items ?? data.SearchResult?.Items ?? [];
+}
 
-  // 巻数（全角/半角の（数字）または末尾の数字）が一致する候補を優先する
-  const volMatch = title.match(/[（(](\d+)[）)]|(\d+)\s*巻?$/);
-  const vol = volMatch ? (volMatch[1] || volMatch[2]) : null;
+// 分類情報から「Kindle版」と「紙の本」に振り分ける
+function isKindle(it) {
+  const binding = it.itemInfo?.classifications?.binding?.displayValue || "";
+  return /kindle|電子書籍/i.test(binding);
+}
+
+function pickBest(list, vol) {
+  if (list.length === 0) return null;
   if (vol) {
-    const sameVol = items.find((it) => {
+    const sameVol = list.find((it) => {
       const t = it.itemInfo?.title?.displayValue || "";
       return new RegExp(`[（(]${vol}[）)]|(^|\\D)${vol}(\\D|$)`).test(t);
     });
-    if (sameVol) return sameVol.detailPageURL || sameVol.DetailPageURL || "";
+    if (sameVol) return sameVol;
   }
+  return list[0];
+}
 
-  return items[0].detailPageURL || items[0].DetailPageURL || "";
+function toLinks(items, title) {
+  if (items.length === 0) return { amazon: "", kindle: "" };
+
+  // シリーズ名部分（巻数・全角/半角カッコの前まで）を取り出し、
+  // 検索結果のタイトルにその文字列がちゃんと含まれているものだけを候補にする
+  const seriesName = title.replace(/[（(]?\d+[）)]?\s*巻?\s*$/, "").trim();
+  const keyChunk = seriesName.slice(0, Math.max(4, Math.floor(seriesName.length * 0.6)));
+
+  const relevant = items.filter((it) => {
+    const t = it.itemInfo?.title?.displayValue || "";
+    return keyChunk && t.includes(keyChunk);
+  });
+  if (relevant.length === 0) return { amazon: "", kindle: "" };
+
+  const volMatch = title.match(/[（(](\d+)[）)]|(\d+)\s*巻?$/);
+  const vol = volMatch ? (volMatch[1] || volMatch[2]) : null;
+
+  const kindleCandidates = relevant.filter(isKindle);
+  const printCandidates = relevant.filter((it) => !isKindle(it));
+
+  const printItem = pickBest(printCandidates.length > 0 ? printCandidates : relevant, vol);
+  const kindleItem = pickBest(kindleCandidates, vol);
+
+  return {
+    amazon: printItem ? (printItem.detailPageURL || printItem.DetailPageURL || "") : "",
+    kindle: kindleItem ? (kindleItem.detailPageURL || kindleItem.DetailPageURL || "") : "",
+  };
+}
+
+// ISBNがあれば先にISBNで検索（ほぼ一意に絞れる）。見つからなければタイトルで検索する。
+async function findLinks(token, title, isbn) {
+  if (isbn) {
+    const isbnItems = await searchItem(token, isbn);
+    const isbnResult = toLinks(isbnItems, title);
+    if (isbnResult.amazon || isbnResult.kindle) {
+      return isbnResult;
+    }
+    await sleep(1000);
+  }
+  const titleItems = await searchItem(token, title);
+  return toLinks(titleItems, title);
 }
 
 function sleep(ms) {
@@ -143,25 +190,31 @@ async function main() {
   console.log("アクセストークンを取得します…");
   const token = await getAccessToken();
 
-  let found = 0;
+  let foundAmazon = 0;
+  let foundKindle = 0;
   let total = 0;
 
   for (const pub of data.publishers ?? []) {
     for (const t of pub.titles ?? []) {
       total += 1;
-      // すでにamazonリンクが入っている場合はスキップ（無駄なAPI呼び出しを避ける）
-      if (t.amazon) continue;
+      // すでに両方埋まっている場合はスキップ（無駄なAPI呼び出しを避ける）
+      if (t.amazon && t.kindle) continue;
 
-      const link = await searchItem(token, t.title);
-      if (link) {
-        t.amazon = link;
-        found += 1;
+      const { amazon, kindle } = await findLinks(token, t.title, t.isbn);
+      if (!t.amazon && amazon) {
+        t.amazon = amazon;
+        foundAmazon += 1;
+      }
+      if (!t.kindle && kindle) {
+        t.kindle = kindle;
+        foundKindle += 1;
       }
       await sleep(1000);
     }
   }
 
-  console.log(`Amazonリンク: ${found}/${total} 件見つかりました`);
+  console.log(`Amazon(紙)リンク: ${foundAmazon}/${total} 件見つかりました`);
+  console.log(`Kindleリンク: ${foundKindle}/${total} 件見つかりました`);
 
   await writeFile(dataPath, JSON.stringify(data, null, 2) + "\n", "utf-8");
   console.log("data.json を更新しました。");
