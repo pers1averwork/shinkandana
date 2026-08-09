@@ -120,6 +120,15 @@
     background: var(--paper-deep);
   }
 
+  .date-notice {
+    max-width: 960px;
+    margin: 0 auto 20px;
+    padding: 0 24px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--stamp-red);
+  }
+
   main {
     max-width: 960px;
     margin: 0 auto;
@@ -304,6 +313,7 @@
     </div>
   </header>
 
+  <p class="date-notice" id="dateNotice" style="display:none;"></p>
   <nav class="toc" id="toc"></nav>
 
   <main id="main">
@@ -380,8 +390,18 @@
     main.innerHTML = "";
     toc.innerHTML = "";
 
+    // 表示している発売日が「今日」と違う場合（=今日は新刊がなく翌日以降を表示している場合）は注記を出す
+    const noticeEl = document.getElementById("dateNotice");
+    const todayStr = new Date().toISOString().slice(0, 10);
+    if (data.date && data.date !== todayStr) {
+      noticeEl.textContent = "本日は発売がなかったため、直近の発売日（" + data.date + "）の新刊を表示しています。";
+      noticeEl.style.display = "block";
+    } else {
+      noticeEl.style.display = "none";
+    }
+
     if (!data.publishers || data.publishers.length === 0) {
-      main.innerHTML = '<div class="empty">本日の新刊情報はまだ登録されていません。</div>';
+      main.innerHTML = '<div class="empty">新刊情報はまだ登録されていません。</div>';
       return;
     }
 
