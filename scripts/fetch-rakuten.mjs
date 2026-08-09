@@ -136,31 +136,39 @@ async function fetchKoboLink(title, retry = 0) {
   return items[0].affiliateUrl || items[0].itemUrl || "";
 }
 
-async function main() {
-  const target = todayJST();
-  console.log("対象日:", target);
+// 日付文字列(YYYY-MM-DD)を1日進める
+function addDays(dateStr, days) {
+  const d = new Date(dateStr + "T00:00:00+09:00");
+  d.setDate(d.getDate() + days);
+  const jst = new Date(d.getTime());
+  const y = jst.getFullYear();
+  const m = String(jst.getMonth() + 1).padStart(2, "0");
+  const day = String(jst.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
 
-  // 1回目：ページ数の全体像をつかむ
-  const first = await fetchPage(1);
-  await sleep(1500);
-  const pageCount = first.pageCount ?? 1;
-  console.log("総ページ数:", pageCount, "（全体件数:", first.count, "）");
+// 指定した日付の新刊を探す（見つからなければ null）
+// pageCache: 同じページを何度も取得しないためのキャッシュ（Map<page番号, データ>）
+async function findReleasesForDate(target, pageCount, pageCache) {
+  async function getPage(page) {
+    if (pageCache.has(page)) return pageCache.get(page);
+    const data = await fetchPage(page);
+    pageCache.set(page, data);
+    await sleep(1500);
+    return data;
+  }
 
-  // ページ内の先頭アイテムの発売日を取得するヘルパー
   function firstDateOnPage(data) {
     const item = data.Items?.[0]?.Item;
     return item ? normalizeSalesDate(item.salesDate || "") : null;
   }
 
   // 二分探索で「発売日が対象日以下になる、最初のページ」を探す
-  // （-releaseDateで新しい順＝未来の予約分も含めて日付が大きい順に並んでいるため）
   let lo = 1;
   let hi = pageCount;
-  let firstPageData = first;
   while (lo < hi) {
     const mid = Math.floor((lo + hi) / 2);
-    const data = mid === 1 ? firstPageData : await fetchPage(mid);
-    if (mid !== 1) await sleep(1500);
+    const data = await getPage(mid);
     const d = firstDateOnPage(data);
     if (d && d <= target) {
       hi = mid;
@@ -168,18 +176,15 @@ async function main() {
       lo = mid + 1;
     }
   }
-  console.log("境界ページ:", lo);
 
-  // 境界ページから前後数ページを実際に見て、対象日に一致するものを集める
+  // 境界ページの前後を実際に見て、対象日に一致するものを集める
   const collected = [];
   let page = Math.max(1, lo - 1);
   let sawTarget = false;
   let pastTarget = false;
 
   while (page <= Math.min(pageCount, lo + 20) && !pastTarget) {
-    const data = await fetchPage(page);
-    await sleep(1500);
-
+    const data = await getPage(page);
     const items = data.Items ?? [];
     let allOlderOnThisPage = items.length > 0;
 
@@ -195,14 +200,41 @@ async function main() {
       }
     }
 
-    // 対象日のアイテムを既に見つけたあと、このページが全部対象日より古いなら打ち切り
     if (sawTarget && allOlderOnThisPage) {
       pastTarget = true;
     }
     page += 1;
   }
 
-  console.log("取得件数:", collected.length);
+  return collected;
+}
+
+async function main() {
+  const today = todayJST();
+
+  // 1回目：ページ数の全体像をつかむ（対象日によらず共通）
+  const first = await fetchPage(1);
+  await sleep(1500);
+  const pageCount = first.pageCount ?? 1;
+  console.log("総ページ数:", pageCount, "（全体件数:", first.count, "）");
+
+  const pageCache = new Map();
+  pageCache.set(1, first);
+
+  // 今日から最大7日先まで、新刊が見つかる日を順番に探す
+  let target = today;
+  let collected = [];
+  for (let i = 0; i < 7; i++) {
+    target = i === 0 ? today : addDays(today, i);
+    console.log("対象日を確認中:", target);
+    collected = await findReleasesForDate(target, pageCount, pageCache);
+    if (collected.length > 0) {
+      console.log(target === today ? "今日発売分が見つかりました" : `今日は発売なし。${target}分を表示します`);
+      break;
+    }
+  }
+
+  console.log("対象日:", target, " 取得件数:", collected.length);
 
   // それぞれのタイトルについて、楽天KoboのeBookリンクも検索して紐付ける
   console.log("Koboリンクを検索します…");
