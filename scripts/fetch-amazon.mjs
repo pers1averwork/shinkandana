@@ -114,17 +114,22 @@ async function searchItem(token, title, retry = 0) {
   }
 
   const data = JSON.parse(body);
-  const item = data.searchResult?.items?.[0] ?? data.SearchResult?.Items?.[0];
+  const items = data.searchResult?.items ?? data.SearchResult?.Items ?? [];
+  if (items.length === 0) return "";
 
-  // 最初の3件だけ、実際に返ってきたレスポンスの中身をそのままログに出す（原因調査用）
-  if (debugCount < 3) {
-    debugCount += 1;
-    console.log(`診断（${title}）ステータス=${status} レスポンス=${body.slice(0, 500)}`);
+  // 巻数（全角/半角の（数字）または末尾の数字）が一致する候補を優先する
+  const volMatch = title.match(/[（(](\d+)[）)]|(\d+)\s*巻?$/);
+  const vol = volMatch ? (volMatch[1] || volMatch[2]) : null;
+  if (vol) {
+    const sameVol = items.find((it) => {
+      const t = it.itemInfo?.title?.displayValue || "";
+      return new RegExp(`[（(]${vol}[）)]|(^|\\D)${vol}(\\D|$)`).test(t);
+    });
+    if (sameVol) return sameVol.detailPageURL || sameVol.DetailPageURL || "";
   }
 
-  return item?.detailPageUrl || item?.DetailPageURL || "";
+  return items[0].detailPageURL || items[0].DetailPageURL || "";
 }
-let debugCount = 0;
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
