@@ -101,8 +101,8 @@ async function fetchKoboLink(title, retry = 0) {
   url.searchParams.set("applicationId", APP_ID);
   url.searchParams.set("accessKey", ACCESS_KEY);
   url.searchParams.set("affiliateId", AFFILIATE_ID);
-  url.searchParams.set("title", title);
-  url.searchParams.set("hits", "1");
+  url.searchParams.set("keyword", title);
+  url.searchParams.set("hits", "5");
 
   const { status, body } = await httpsGet(url, {
     Referer: "https://shinkandana.jp/",
@@ -121,8 +121,19 @@ async function fetchKoboLink(title, retry = 0) {
   }
 
   const data = JSON.parse(body);
-  const item = data.Items?.[0]?.Item;
-  return item ? (item.affiliateUrl || item.itemUrl || "") : "";
+  const items = (data.Items ?? []).map((wrap) => wrap.Item);
+  if (items.length === 0) return "";
+
+  // 巻数（末尾の数字）が一致する候補があれば優先する
+  // （複数巻あるシリーズで、違う巻のリンクが付いてしまうのを防ぐため）
+  const volMatch = title.match(/(\d+)\s*巻?$/);
+  if (volMatch) {
+    const vol = volMatch[1];
+    const sameVol = items.find((it) => new RegExp(`(^|\\D)${vol}(\\D|$)`).test(it.title || ""));
+    if (sameVol) return sameVol.affiliateUrl || sameVol.itemUrl || "";
+  }
+
+  return items[0].affiliateUrl || items[0].itemUrl || "";
 }
 
 async function main() {
