@@ -135,16 +135,27 @@ function pickBest(list, vol) {
   return list[0];
 }
 
+// 波ダッシュ・半角チルダ・スペースなど表記ゆれを吸収するための正規化
+function normalizeForCompare(s) {
+  return (s || "")
+    .replace(/[〜～~]/g, "") // 波ダッシュ系はまとめて除去
+    .replace(/[　\s]/g, "") // 全角/半角スペースを除去
+    .replace(/[（(].*?[）)]/g, "") // カッコ書き（巻数・副題の注記など）を除去
+    .replace(/[【】「」『』]/g, ""); // 装飾カッコも除去
+}
+
 function toLinks(items, title) {
   if (items.length === 0) return { amazon: "", kindle: "" };
 
-  // シリーズ名部分（巻数・全角/半角カッコの前まで）を取り出し、
-  // 検索結果のタイトルにその文字列がちゃんと含まれているものだけを候補にする
+  // シリーズ名部分（巻数の前まで）を取り出し、正規化した上で
+  // 検索結果のタイトルの「先頭部分」が含まれているものだけを候補にする
+  // （厳しくしすぎると表記ゆれで正しい候補まで弾いてしまうため、判定は緩め）
   const seriesName = title.replace(/[（(]?\d+[）)]?\s*巻?\s*$/, "").trim();
-  const keyChunk = seriesName.slice(0, Math.max(4, Math.floor(seriesName.length * 0.6)));
+  const normalizedSeries = normalizeForCompare(seriesName);
+  const keyChunk = normalizedSeries.slice(0, Math.min(8, normalizedSeries.length));
 
   const relevant = items.filter((it) => {
-    const t = it.itemInfo?.title?.displayValue || "";
+    const t = normalizeForCompare(it.itemInfo?.title?.displayValue || "");
     return keyChunk && t.includes(keyChunk);
   });
   if (relevant.length === 0) return { amazon: "", kindle: "" };
@@ -208,6 +219,9 @@ async function main() {
       if (!t.kindle && kindle) {
         t.kindle = kindle;
         foundKindle += 1;
+      }
+      if (!amazon && !kindle) {
+        console.log(`見つからず: ${t.title}`);
       }
       await sleep(1000);
     }
