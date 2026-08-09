@@ -57,10 +57,10 @@ function httpsRequest(url, { method = "GET", headers = {}, body } = {}) {
 //   v3.2 (EU) → https://api.amazon.co.uk/auth/o2/token
 //   v3.3 (FE/日本) → https://api.amazon.co.jp/auth/o2/token   ← 今回はこちら
 async function getAccessToken() {
+  // client_id/client_secretは本文ではなく、標準的なOAuth2のBasic認証ヘッダーに載せる
+  const basicAuth = Buffer.from(`${CREDENTIAL_ID}:${CREDENTIAL_SECRET}`).toString("base64");
   const payload = new URLSearchParams({
     grant_type: "client_credentials",
-    client_id: CREDENTIAL_ID,
-    client_secret: CREDENTIAL_SECRET,
     scope: "creatorsapi::default",
   }).toString();
 
@@ -68,6 +68,7 @@ async function getAccessToken() {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+      Authorization: `Basic ${basicAuth}`,
       "Content-Length": Buffer.byteLength(payload),
     },
     body: payload,
