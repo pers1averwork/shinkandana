@@ -1,88 +1,93 @@
 {
-  "date": "2026-08-14",
+  "date": "2026-08-15",
   "publishers": [
     {
-      "name": "Cygames",
+      "name": "TOブックス",
       "titles": [
         {
-          "title": "アイドルマスター シンデレラガールズ After20 1",
-          "author": "半 二合/バンダイナムコエンターテインメント/T.I.Planning",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0057/9784868660057_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660057",
-          "amazon": "https://www.amazon.co.jp/dp/4868660055?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675222%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875PLVQ8?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F42fbaa8c718f3e4aa05c6c66c4b51b96%2F"
+          "title": "王都ワンオペゴーレムマスター。まさかの追放！？〜自由の身になったので弟子の美人勇者たちと一緒に最強ゴーレム作ります。戻ってこいと言われてももう知らん！〜@COMIC 第4巻",
+          "author": "阿住周",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0847/9784868540847_1_2.jpg?_ex=200x200",
+          "isbn": "9784868540847",
+          "amazon": "https://www.amazon.co.jp/dp/B0H43Z9RS9?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18667184%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0H43Z9RS9?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3069e046016536709cd106dc64f091d5%2F"
         },
         {
-          "title": "アイドルマスター シンデレラガールズ After20 3",
-          "author": "半 二合/バンダイナムコエンターテインメント/T.I.Planning",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0071/9784868660071_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660071",
-          "amazon": "https://www.amazon.co.jp/dp/4868660071?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675223%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875M5V5Q?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F822070e7115c3adfbf415b1320a3ddbe%2F"
+          "title": "自分の事を主人公だと信じてやまない踏み台が、主人公を踏み台だと勘違いして、優勝してしまうお話です@COMIC 第2巻",
+          "author": "KYO=H",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0830/9784868540830_1_3.jpg?_ex=200x200",
+          "isbn": "9784868540830",
+          "amazon": "https://www.amazon.co.jp/dp/B0H44BJXQ6?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18667183%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0H44BJXQ6?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F7f1368080d4e32209c78ea18401f792a%2F"
+        }
+      ]
+    },
+    {
+      "name": "オーバーラップ",
+      "titles": [
+        {
+          "title": "素人よりもクズなんで（1）",
+          "author": "秋良ろじ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7710/9784824017710_1_2.jpg?_ex=200x200",
+          "isbn": "9784824017710",
+          "amazon": "https://www.amazon.co.jp/dp/4824017718?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18724349%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0FLLZ8F82?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": ""
         },
         {
-          "title": "アイドルマスター シンデレラガールズ U149 1",
-          "author": "廾之/バンダイナムコエンターテインメント",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0095/9784868660095_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660095",
-          "amazon": "https://www.amazon.co.jp/dp/4868660098?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675219%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875L6K7F?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F86bd272759513c7f90f532da5477354d%2F"
+          "title": "娼婦堕ち追放令嬢と冷酷騎士の溺愛すぎる絶倫初夜　〜愛重めの執愛で毎晩抱きつぶされています 3",
+          "author": "永澤るり",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7765/9784824017765_1_2.jpg?_ex=200x200",
+          "isbn": "9784824017765",
+          "amazon": "https://www.amazon.co.jp/dp/4824017769?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18724347%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0D72JBG3Q?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F8d63c8bca4863bfd802f475a34f05787%2F"
         },
         {
-          "title": "アイドルマスター シンデレラガールズ After20 2",
-          "author": "半 二合/バンダイナムコエンターテインメント/T.I.Planning",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0064/9784868660064_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660064",
-          "amazon": "https://www.amazon.co.jp/dp/4868660063?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675221%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875H32D7?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F63d14671f33f3312a7437da4df86f0ba%2F"
+          "title": "嘘つきアイドル様と誠実アンチ（1）",
+          "author": "上原あり",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7703/9784824017703_1_2.jpg?_ex=200x200",
+          "isbn": "9784824017703",
+          "amazon": "https://www.amazon.co.jp/dp/482401770X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18724350%2F",
+          "kindle": "",
+          "kobo": ""
         },
         {
-          "title": "アイドルマスター シンデレラガールズ After20 4",
-          "author": "半 二合/バンダイナムコエンターテインメント/T.I.Planning",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0088/9784868660088_1_4.jpg?_ex=200x200",
-          "isbn": "9784868660088",
-          "amazon": "https://www.amazon.co.jp/dp/486866008X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675220%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875WBLBJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F6bd61166073431eab551b77ec824ce81%2F"
+          "title": "心臓の融点 2",
+          "author": "美山薫子",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7734/9784824017734_1_2.jpg?_ex=200x200",
+          "isbn": "9784824017734",
+          "amazon": "https://www.amazon.co.jp/dp/4824017734?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18724352%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HDNKMML1?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": ""
         },
         {
-          "title": "アイドルマスター シンデレラガールズ U149 3",
-          "author": "廾之/バンダイナムコエンターテインメント",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0118/9784868660118_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660118",
-          "amazon": "https://www.amazon.co.jp/dp/486866011X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675215%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0F486MJ6Z?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fb37f238d11b33ad0862702ea64974e53%2F"
+          "title": "上司の家に転がり込みまして。 4",
+          "author": "むしろ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7697/9784824017697_1_2.jpg?_ex=200x200",
+          "isbn": "9784824017697",
+          "amazon": "https://www.amazon.co.jp/dp/4824017696?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18724363%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HC6MR37J?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fc8522893c37b3dab9eb16ecb3eec927d%2F"
         },
         {
-          "title": "アイドルマスター シンデレラガールズ U149 2",
-          "author": "廾之/バンダイナムコエンターテインメント",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0101/9784868660101_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660101",
-          "amazon": "https://www.amazon.co.jp/dp/4868660101?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675217%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875XV25F?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ff24a8c67128436fda96eebe44f83966b%2F"
-        },
-        {
-          "title": "アイドルマスター シンデレラガールズ U149 4",
-          "author": "廾之/バンダイナムコエンターテインメント",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0125/9784868660125_1_2.jpg?_ex=200x200",
-          "isbn": "9784868660125",
-          "amazon": "https://www.amazon.co.jp/dp/4868660128?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18675216%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0875SXKXX?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F15850671fd60364bb0df548cf96e4460%2F"
+          "title": "心臓の融点 1",
+          "author": "美山薫子",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7727/9784824017727_1_2.jpg?_ex=200x200",
+          "isbn": "9784824017727",
+          "amazon": "https://www.amazon.co.jp/dp/4824017726?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18724353%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HDNK7SM2?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": ""
         }
       ]
     }
