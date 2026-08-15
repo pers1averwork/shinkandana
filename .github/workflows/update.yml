@@ -2,8 +2,8 @@ name: 新刊データを毎日自動更新
 
 on:
   schedule:
-    # UTC 15:00 = JST 0:00
-    - cron: "0 15 * * *"
+    # UTC 11:30 = JST 20:30（無料枠は数時間ズレることがあるため、遅延を見込んで前倒し）
+    - cron: "30 11 * * *"
   workflow_dispatch: {} # 手動実行ボタンも使えるようにしておく
 
 permissions:
