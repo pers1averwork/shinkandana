@@ -207,8 +207,15 @@
 
   .titles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  @media (min-width: 640px) {
+    .titles {
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 18px;
+    }
   }
 
   .card {
@@ -279,11 +286,11 @@
 
   .card .links a {
     text-decoration: none;
-    font-size: 0.76rem;
+    font-size: 0.74rem;
     text-align: center;
-    padding: 7px 8px;
+    padding: 6px 6px;
     flex: 1 1 calc(50% - 8px);
-    min-width: 90px;
+    min-width: 68px;
     border: 1px solid var(--ink);
     color: var(--ink);
     transition: background 0.15s, color 0.15s;
