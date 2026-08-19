@@ -30,13 +30,16 @@ function todayJST() {
   return jst.toISOString().slice(0, 10);
 }
 
+// YYYY-MM-DD文字列に日数を加算する。実行環境のタイムゾーンに左右されないよう、
+// JST等の時刻情報を持たせず、暦日としてUTC基準で計算する
 function addDays(dateStr, days) {
-  const d = new Date(dateStr + "T00:00:00+09:00");
-  d.setDate(d.getDate() + days);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const utc = new Date(Date.UTC(y, m - 1, d));
+  utc.setUTCDate(utc.getUTCDate() + days);
+  const yy = utc.getUTCFullYear();
+  const mm = String(utc.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(utc.getUTCDate()).padStart(2, "0");
+  return `${yy}-${mm}-${dd}`;
 }
 
 function normalizeSalesDate(salesDate) {
