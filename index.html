@@ -63,6 +63,7 @@
   </header>
 
   <p class="date-notice" id="dateNotice" style="display:none;"></p>
+  <div class="date-nav" id="dateNav"></div>
   <nav class="toc" id="toc"></nav>
 
   <main id="main">
@@ -149,6 +150,18 @@
       noticeEl.style.display = "block";
     } else {
       noticeEl.style.display = "none";
+    }
+
+    // 日付ナビゲーション（前の日はアーカイブへ、次はこのページ自体が最新なので表示なし）
+    const dateNav = document.getElementById("dateNav");
+    if (data.date) {
+      const prev = new Date(data.date + "T00:00:00");
+      prev.setDate(prev.getDate() - 1);
+      const prevStr = prev.toISOString().slice(0, 10);
+      dateNav.innerHTML =
+        '<a href="/archive/' + prevStr + '.html">← ' + prevStr + '</a>' +
+        '<span class="current">' + data.date + '</span>' +
+        '<span class="disabled">最新 →</span>';
     }
 
     if (!data.publishers || data.publishers.length === 0) {
