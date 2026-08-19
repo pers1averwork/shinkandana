@@ -1,0 +1,41 @@
+name: 発売予定カレンダーを週1回更新
+
+on:
+  schedule:
+    # UTC 12:00 = JST 21:00（毎週日曜）
+    - cron: "0 12 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-upcoming:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      - name: Node.jsをセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 向こう30日分の発売予定を取得
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+          UPCOMING_DAYS: "30"
+        run: node scripts/fetch-upcoming.mjs
+
+      - name: 発売予定カレンダーページを生成
+        run: node scripts/build-upcoming.mjs
+
+      - name: コミット・プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add upcoming.json upcoming/
+          git diff --cached --quiet || git commit -m "発売予定カレンダーを更新"
+          git push
