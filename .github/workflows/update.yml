@@ -35,25 +35,13 @@ jobs:
           AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
         run: node scripts/fetch-amazon.mjs
 
-      - name: sitemap.xmlの更新日時を書き換え
-        run: |
-          TODAY=$(TZ='Asia/Tokyo' date +%Y-%m-%d)
-          cat > sitemap.xml << EOF
-          <?xml version="1.0" encoding="UTF-8"?>
-          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            <url>
-              <loc>https://shinkandana.jp/</loc>
-              <lastmod>${TODAY}</lastmod>
-              <changefreq>daily</changefreq>
-              <priority>1.0</priority>
-            </url>
-          </urlset>
-          EOF
+      - name: アーカイブページとsitemap.xmlを生成
+        run: node scripts/build-archive.mjs
 
       - name: data.jsonをコミット・プッシュ
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json sitemap.xml
+          git add data.json sitemap.xml archive/
           git diff --cached --quiet || git commit -m "新刊データを自動更新"
           git push
