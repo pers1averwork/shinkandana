@@ -2,21 +2,6 @@
   "date": "2026-08-19",
   "publishers": [
     {
-      "name": "オークラ出版",
-      "titles": [
-        {
-          "title": "おいしいからだ。 3",
-          "author": "青井うえ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0580/9784775530580_1_3.jpg?_ex=200x200",
-          "isbn": "9784775530580",
-          "amazon": "https://www.amazon.co.jp/dp/4775530585?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18529343%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0HFPYQ2KZ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2a595db5910939919c0b98a58da6756f%2F"
-        }
-      ]
-    },
-    {
       "name": "集英社",
       "titles": [
         {
@@ -392,31 +377,6 @@
       ]
     },
     {
-      "name": "竹書房",
-      "titles": [
-        {
-          "title": "とろける夢を召し上がれ　拗らせ同人作家と落ちこぼれ夢魔の凸凹レッスン",
-          "author": "Noah",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0548/9784801990548_1_5.jpg?_ex=200x200",
-          "isbn": "9784801990548",
-          "amazon": "https://www.amazon.co.jp/dp/4801990541?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18641141%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0HF7RRK6F?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0325b2e31e8a3519bb88a4b306540189%2F"
-        },
-        {
-          "title": "推しとは恋に落ちません。（たぶん）（3）",
-          "author": "三浦ひらく",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0555/9784801990555_1_5.jpg?_ex=200x200",
-          "isbn": "9784801990555",
-          "amazon": "https://www.amazon.co.jp/dp/480199055X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18641143%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0HF7MB5WJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fad3ee5dfe53733b99c67c78a4b118bc4%2F"
-        }
-      ]
-    },
-    {
       "name": "小学館",
       "titles": [
         {
@@ -548,6 +508,101 @@
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18705535%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0HCBFTPB4?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F471e4adccde2385cb500c05eef47bde4%2F"
+        }
+      ]
+    },
+    {
+      "name": "KADOKAWA",
+      "titles": [
+        {
+          "title": "英国浪漫戯画フォレストアイビー　第3巻",
+          "author": "甘酒縞",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2113/9784045002113_1_8.jpg?_ex=200x200",
+          "isbn": "9784045002113",
+          "amazon": "https://www.amazon.co.jp/dp/B0H2S5MTX3?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18682195%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0H2S5MTX3?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fbddd78858b553f09b2f29fa1e4caae0a%2F"
+        },
+        {
+          "title": "ぜんぶ ぜんぶきみの性 1",
+          "author": "浅月　のりと",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2014/9784045002014_1_10.jpg?_ex=200x200",
+          "isbn": "9784045002014",
+          "amazon": "https://www.amazon.co.jp/dp/4045002014?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691776%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HC68KR1M?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F57198e7d86873db897ff905011a95592%2F"
+        },
+        {
+          "title": "青騎士　第33号",
+          "author": "電撃マオウ編集部",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0508/9784045000508_1_5.jpg?_ex=200x200",
+          "isbn": "9784045000508",
+          "amazon": "https://www.amazon.co.jp/dp/404500050X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691840%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F6e270be6f4343a2793947bd5dd73b871%2F"
+        },
+        {
+          "title": "屍介護　3",
+          "author": "三卜　和貴/三浦　晴海/香魚子",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2236/9784045002236_1_14.jpg?_ex=200x200",
+          "isbn": "9784045002236",
+          "amazon": "https://www.amazon.co.jp/dp/B0GX347Y6L?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691879%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0GX347Y6L?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fac6d4f36b95b30dbabb852e80299bffa%2F"
+        },
+        {
+          "title": "滅亡天使ほろぶちゃん 1",
+          "author": "たむら　ゲン/水田　マル",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1406/9784045001406_1_15.jpg?_ex=200x200",
+          "isbn": "9784045001406",
+          "amazon": "https://www.amazon.co.jp/dp/4045001409?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691914%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HD59XMNJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F50fcc2cd6b6438a9b4853b7381d5733c%2F"
+        }
+      ]
+    },
+    {
+      "name": "オークラ出版",
+      "titles": [
+        {
+          "title": "おいしいからだ。 3",
+          "author": "青井うえ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0580/9784775530580_1_3.jpg?_ex=200x200",
+          "isbn": "9784775530580",
+          "amazon": "https://www.amazon.co.jp/dp/4775530585?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18529343%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HFPYQ2KZ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2a595db5910939919c0b98a58da6756f%2F"
+        }
+      ]
+    },
+    {
+      "name": "竹書房",
+      "titles": [
+        {
+          "title": "とろける夢を召し上がれ　拗らせ同人作家と落ちこぼれ夢魔の凸凹レッスン",
+          "author": "Noah",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0548/9784801990548_1_5.jpg?_ex=200x200",
+          "isbn": "9784801990548",
+          "amazon": "https://www.amazon.co.jp/dp/4801990541?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18641141%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HF7RRK6F?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0325b2e31e8a3519bb88a4b306540189%2F"
+        },
+        {
+          "title": "推しとは恋に落ちません。（たぶん）（3）",
+          "author": "三浦ひらく",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0555/9784801990555_1_5.jpg?_ex=200x200",
+          "isbn": "9784801990555",
+          "amazon": "https://www.amazon.co.jp/dp/480199055X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18641143%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HF7MB5WJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fad3ee5dfe53733b99c67c78a4b118bc4%2F"
         }
       ]
     },
@@ -688,61 +743,6 @@
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681463%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0H93WJ512?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F52f3c3070e483529bed518de8fc88c0f%2F"
-        }
-      ]
-    },
-    {
-      "name": "KADOKAWA",
-      "titles": [
-        {
-          "title": "英国浪漫戯画フォレストアイビー　第3巻",
-          "author": "甘酒縞",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2113/9784045002113_1_8.jpg?_ex=200x200",
-          "isbn": "9784045002113",
-          "amazon": "https://www.amazon.co.jp/dp/B0H2S5MTX3?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18682195%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0H2S5MTX3?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fbddd78858b553f09b2f29fa1e4caae0a%2F"
-        },
-        {
-          "title": "ぜんぶ ぜんぶきみの性 1",
-          "author": "浅月　のりと",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2014/9784045002014_1_10.jpg?_ex=200x200",
-          "isbn": "9784045002014",
-          "amazon": "https://www.amazon.co.jp/dp/4045002014?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691776%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0HC68KR1M?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F57198e7d86873db897ff905011a95592%2F"
-        },
-        {
-          "title": "青騎士　第33号",
-          "author": "電撃マオウ編集部",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0508/9784045000508_1_5.jpg?_ex=200x200",
-          "isbn": "9784045000508",
-          "amazon": "https://www.amazon.co.jp/dp/404500050X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691840%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F6e270be6f4343a2793947bd5dd73b871%2F"
-        },
-        {
-          "title": "屍介護　3",
-          "author": "三卜　和貴/三浦　晴海/香魚子",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2236/9784045002236_1_14.jpg?_ex=200x200",
-          "isbn": "9784045002236",
-          "amazon": "https://www.amazon.co.jp/dp/B0GX347Y6L?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691879%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0GX347Y6L?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fac6d4f36b95b30dbabb852e80299bffa%2F"
-        },
-        {
-          "title": "滅亡天使ほろぶちゃん 1",
-          "author": "たむら　ゲン/水田　マル",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1406/9784045001406_1_15.jpg?_ex=200x200",
-          "isbn": "9784045001406",
-          "amazon": "https://www.amazon.co.jp/dp/4045001409?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691914%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0HD59XMNJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F50fcc2cd6b6438a9b4853b7381d5733c%2F"
         }
       ]
     },
