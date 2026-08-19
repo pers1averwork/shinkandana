@@ -42,7 +42,22 @@ function renderCards(pub, accent) {
       </div>`).join("");
 }
 
-function renderArchivePage(data) {
+function renderDateNav(dateStr, prevDate, nextDate) {
+  const prevHtml = prevDate
+    ? `<a href="/archive/${prevDate}.html">← ${prevDate}</a>`
+    : `<span class="disabled">← ${prevDate ?? ""}</span>`;
+  const nextHtml = nextDate
+    ? `<a href="/archive/${nextDate}.html">${nextDate} →</a>`
+    : `<a href="/">今日 →</a>`;
+  return `
+  <div class="date-nav">
+    ${prevHtml}
+    <span class="current">${dateStr}</span>
+    ${nextHtml}
+  </div>`;
+}
+
+function renderArchivePage(data, prevDate, nextDate) {
   const dateLabel = formatDateLabel(data.date);
   const title = `${dateLabel}発売のコミック新刊まとめ | 今日の新刊棚`;
   const description = `${dateLabel}に発売されたコミック新刊を出版社別にまとめています。`;
@@ -105,6 +120,7 @@ function renderArchivePage(data) {
     <h1 class="site-title"><a href="/">今日の新刊棚</a></h1>
     <p style="margin-top:8px; font-weight:700;">${dateLabel}発売分</p>
   </header>
+  ${renderDateNav(data.date, prevDate, nextDate)}
 
   <nav class="toc">
     ${tocHtml}
@@ -192,16 +208,24 @@ async function main() {
   const archiveDir = new URL("../archive/", import.meta.url);
   await mkdir(archiveDir, { recursive: true });
 
+  // 既存のアーカイブ日付を先に集める（今日の分を書き出す前の状態）
+  const existingFiles = await readdir(archiveDir).catch(() => []);
+  const existingDates = existingFiles
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.html$/.test(f))
+    .map((f) => f.replace(".html", ""));
+
+  // 今日の日付も含めた全日付をソートし、prev/nextを求める
+  const allDates = Array.from(new Set([...existingDates, data.date])).sort();
+  const idx = allDates.indexOf(data.date);
+  const prevDate = idx > 0 ? allDates[idx - 1] : null;
+  const nextDate = idx < allDates.length - 1 ? allDates[idx + 1] : null;
+
   // その日のアーカイブページを書き出す
-  const pageHtml = renderArchivePage(data);
+  const pageHtml = renderArchivePage(data, prevDate, nextDate);
   await writeFile(new URL(`${data.date}.html`, archiveDir), pageHtml, "utf-8");
   console.log(`archive/${data.date}.html を書き出しました`);
 
-  // 既存のアーカイブ日付を集める（すでにあるファイル一覧から.htmlの日付部分を拾う）
-  const files = await readdir(archiveDir);
-  const dates = files
-    .filter((f) => /^\d{4}-\d{2}-\d{2}\.html$/.test(f))
-    .map((f) => f.replace(".html", ""));
+  const dates = allDates;
 
   // 一覧ページを更新
   const indexHtml = renderIndexPage(dates);

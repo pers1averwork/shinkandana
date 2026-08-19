@@ -267,6 +267,16 @@ async function main() {
     titles,
   }));
 
+  // 集英社・講談社・小学館・KADOKAWAを優先して先頭に表示し、それ以外は元の順序のまま後ろに続ける
+  const PRIORITY = ["集英社", "講談社", "小学館", "KADOKAWA"];
+  publishers.sort((a, b) => {
+    const ai = PRIORITY.indexOf(a.name);
+    const bi = PRIORITY.indexOf(b.name);
+    const aRank = ai === -1 ? PRIORITY.length : ai;
+    const bRank = bi === -1 ? PRIORITY.length : bi;
+    return aRank - bRank;
+  });
+
   const koboFound = koboLinks.filter(Boolean).length;
   console.log(`Koboリンク: ${koboFound}/${collected.length} 件見つかりました`);
 
