@@ -132,6 +132,45 @@ nav.toc a {
   color: var(--stamp-red);
 }
 
+/* --- 日付ナビゲーション --- */
+.date-nav {
+  max-width: 960px;
+  margin: 0 auto 28px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.date-nav a,
+.date-nav span.disabled {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--ink-soft);
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  background: var(--paper-deep);
+}
+
+.date-nav a:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.date-nav span.disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.date-nav .current {
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 6px 4px;
+  border: none;
+  background: none;
+}
+
 main {
   max-width: 960px;
   margin: 0 auto;
