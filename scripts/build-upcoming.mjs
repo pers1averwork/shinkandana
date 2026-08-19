@@ -1,5 +1,5 @@
-// upcoming.json から、日付ごとに区切った「発売予定カレンダー」ページ（/upcoming/index.html）を
-// 生成するスクリプト。build-archive.mjs と同じ見た目のカード形式を流用する。
+// upcoming.json から、月間カレンダーグリッド＋日付ごとの詳細一覧を持つ
+// 「発売予定カレンダー」ページ（/upcoming/index.html）を生成するスクリプト。
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 
