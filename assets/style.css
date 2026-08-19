@@ -358,6 +358,78 @@ main {
   text-decoration: none;
 }
 
+/* --- 発売予定カレンダー --- */
+.cal-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 20px;
+}
+
+.cal-month-title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 32px 0 12px;
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-dow {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  padding-bottom: 4px;
+}
+
+.cal-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  border: 1px solid transparent;
+  color: var(--ink-soft);
+}
+
+.cal-cell.has-release {
+  background: var(--paper-deep);
+  border-color: var(--line);
+}
+
+.cal-cell.has-release a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.cal-cell.has-release a:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.cal-cell .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--stamp-red);
+  margin-top: 2px;
+}
+
+.cal-cell.today {
+  box-shadow: inset 0 0 0 2px var(--stamp-red);
+}
+
 /* --- フッター：規約系 --- */
 footer {
   border-top: 1px solid var(--line);
