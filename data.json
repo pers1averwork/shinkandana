@@ -11,7 +11,7 @@
           "isbn": "9784775530580",
           "amazon": "https://www.amazon.co.jp/dp/4775530585?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18529343%2F",
-          "kindle": "https://www.amazon.co.jp/dp/B0BH8FJV31?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kindle": "https://www.amazon.co.jp/dp/B0HFPYQ2KZ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2a595db5910939919c0b98a58da6756f%2F"
         }
       ]
@@ -87,7 +87,7 @@
           "amazon": "https://www.amazon.co.jp/dp/B0GX3B5PSJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681465%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0GX3B5PSJ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F601634446ba037b3888eb5f0f25d3096%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2e720f960e763984b5e056031695f26b%2F"
         },
         {
           "title": "みんな〇んじゃえ 2",
@@ -98,6 +98,16 @@
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681473%2F",
           "kindle": "",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fa5a8aa9af09638e98f37757808f90851%2F"
+        },
+        {
+          "title": "巣立てヒナガラス 1",
+          "author": "レツ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6309/9784087926309_1_10.jpg?_ex=200x200",
+          "isbn": "9784087926309",
+          "amazon": "https://www.amazon.co.jp/dp/4087926303?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681464%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0H4SQWVGG?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F22ebbb41008632f5bdff43e49d590ace%2F"
         },
         {
           "title": "制裁学園 9",
@@ -244,10 +254,30 @@
           "author": "小賀 ちさと",
           "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3268/9784088943268_1_21.jpg?_ex=200x200",
           "isbn": "9784088943268",
-          "amazon": "https://www.amazon.co.jp/dp/B0H3P567VM?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "amazon": "https://www.amazon.co.jp/dp/B0GP5LR9S5?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18678366%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0H3P567VM?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F8a8a0cc396623facbd44119a3250ca6b%2F"
+        },
+        {
+          "title": "読心貴族 1 〜男女比1:99世界の悪役令息〜",
+          "author": "ウエダ マサヒロ/マサイ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2797/9784088942797_1_24.jpg?_ex=200x200",
+          "isbn": "9784088942797",
+          "amazon": "https://www.amazon.co.jp/dp/4088942795?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681467%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fdb0cb03fabc23b8fbcfb63ac1d48e65c%2F"
+        },
+        {
+          "title": "異世界最高の貴族、ハーレムを増やすほど強くなる 7",
+          "author": "木下 さとし/三木 なずな/へいろー",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3053/9784088943053_1_29.jpg?_ex=200x200",
+          "isbn": "9784088943053",
+          "amazon": "https://www.amazon.co.jp/dp/B0H2S4V34P?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18678361%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0H2S4V34P?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F281c4a2686e63ec8a7228fa01065aafc%2F"
         },
         {
           "title": "キャプテン2 20",
@@ -270,6 +300,16 @@
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2fd56fbc1290327d8acf7a502e76209b%2F"
         },
         {
+          "title": "キングダム 80",
+          "author": "原 泰久",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2674/9784088942674_1_24.jpg?_ex=200x200",
+          "isbn": "9784088942674",
+          "amazon": "https://www.amazon.co.jp/dp/B0GX36CPT5?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681481%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0GX36CPT5?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F050764b407853c8da27e5a42ab86656e%2F"
+        },
+        {
           "title": "圧倒的ガチャ運で異世界を成り上がる！ 6",
           "author": "藤咲 ユウ/ケンノジ/やむ茶/モレ",
           "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3046/9784088943046_1_30.jpg?_ex=200x200",
@@ -288,6 +328,16 @@
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18678353%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0GX2VM2X3?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F24bc1be9b5103e5c8b3396dc48921352%2F"
+        },
+        {
+          "title": "テラフォーマーズ 24",
+          "author": "橘 賢一/貴家 悠",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3145/9784088943145_1_60.jpg?_ex=200x200",
+          "isbn": "9784088943145",
+          "amazon": "https://www.amazon.co.jp/dp/4088943147?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681480%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0GZSM7TZB?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fc5fe9bc5ebc237588d3f83dffe7a3a66%2F"
         },
         {
           "title": "皇帝の孫に転生する皇帝 7",
@@ -370,9 +420,19 @@
       "name": "小学館",
       "titles": [
         {
+          "title": "鶴子はまだ四十五だから！（3）",
+          "author": "邑咲奇",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7500/9784098547500_1_52.jpg?_ex=200x200",
+          "isbn": "9784098547500",
+          "amazon": "https://www.amazon.co.jp/dp/B0H2G823RF?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18659358%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0FV62XBKF?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F8a13810ebae73952a9877a5e4f6a227f%2F"
+        },
+        {
           "title": "終の退魔師 エンダーガイスター（26）",
           "author": "四方山 貴史",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7494/9784098547494_1_51.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7494/9784098547494_1_52.jpg?_ex=200x200",
           "isbn": "9784098547494",
           "amazon": "https://www.amazon.co.jp/dp/B0GXH482WK?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18659357%2F",
@@ -382,7 +442,7 @@
         {
           "title": "BFF（4）",
           "author": "小花 オト",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7258/9784098547258_1_37.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7258/9784098547258_1_38.jpg?_ex=200x200",
           "isbn": "9784098547258",
           "amazon": "https://www.amazon.co.jp/dp/B0HCB7RBB8?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18663900%2F",
@@ -392,7 +452,7 @@
         {
           "title": "BLACK LAGOON エダ イニシャルステージ（9）",
           "author": "やまむら はじめ/広江 礼威",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2348/9784091582348_1_31.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2348/9784091582348_1_32.jpg?_ex=200x200",
           "isbn": "9784091582348",
           "amazon": "https://www.amazon.co.jp/dp/B0GT2P1VJK?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18672493%2F",
@@ -402,7 +462,7 @@
         {
           "title": "ブラック・ラグーン（14）",
           "author": "広江 礼威",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2331/9784091582331_1_31.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2331/9784091582331_1_32.jpg?_ex=200x200",
           "isbn": "9784091582331",
           "amazon": "https://www.amazon.co.jp/dp/B0HCBH425R?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18672494%2F",
@@ -412,7 +472,7 @@
         {
           "title": "もう興味がないと離婚された令嬢の意外と楽しい新生活（6）",
           "author": "和泉 杏花/さびの ぶち",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7234/9784098547234_1_37.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7234/9784098547234_1_38.jpg?_ex=200x200",
           "isbn": "9784098547234",
           "amazon": "https://www.amazon.co.jp/dp/B0HCBPHBT6?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18676296%2F",
@@ -422,7 +482,7 @@
         {
           "title": "メイド＆ロイドはお嬢様のお役に立ちたい！（1）",
           "author": "みやしろ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2386/9784091582386_1_31.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2386/9784091582386_1_32.jpg?_ex=200x200",
           "isbn": "9784091582386",
           "amazon": "https://www.amazon.co.jp/dp/B0HCBG4BBZ?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18681780%2F",
@@ -432,17 +492,17 @@
         {
           "title": "破滅を控えた悪役令嬢が無理してヒロインを演じた結果（2）",
           "author": "一分 咲/蒼井 たまご/藤 未都也",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7241/9784098547241_1_37.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7241/9784098547241_1_38.jpg?_ex=200x200",
           "isbn": "9784098547241",
           "amazon": "https://www.amazon.co.jp/dp/4098547244?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18697032%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0HCBFJ9QK?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2fe03d2ea0c13ef499612c0127487521%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F13f2775c1ce239d58c78cf6da5e0402c%2F"
         },
         {
           "title": "幼児A〜史上最年少殺人犯と呼ばれた男〜（3）",
           "author": "高橋 一仁",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2379/9784091582379_1_52.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2379/9784091582379_1_53.jpg?_ex=200x200",
           "isbn": "9784091582379",
           "amazon": "https://www.amazon.co.jp/dp/B0H8XRPP5Y?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18703430%2F",
@@ -452,7 +512,7 @@
         {
           "title": "任侠転生ー異世界のヤクザ姫ー（21）",
           "author": "宮下 裕樹/夏原 武",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2355/9784091582355_1_31.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2355/9784091582355_1_32.jpg?_ex=200x200",
           "isbn": "9784091582355",
           "amazon": "",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18703431%2F",
@@ -460,9 +520,19 @@
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fed94137573f7399e94f7465340a17c37%2F"
         },
         {
+          "title": "ゾン100〜ゾンビになるまでにしたい100のこと〜（23）",
+          "author": "麻生 羽呂/高田 康太郎",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2362/9784091582362_1_32.jpg?_ex=200x200",
+          "isbn": "9784091582362",
+          "amazon": "https://www.amazon.co.jp/dp/4091582362?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18705533%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HCBGNN36?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F917ebcb2cc2a33e193c057cb61ad2934%2F"
+        },
+        {
           "title": "一勝千金（7）",
           "author": "サンドロビッチ・ヤバ子/MAAM",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7302/9784098547302_1_37.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7302/9784098547302_1_38.jpg?_ex=200x200",
           "isbn": "9784098547302",
           "amazon": "https://www.amazon.co.jp/dp/B0HCB9TM35?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18705534%2F",
@@ -472,9 +542,9 @@
         {
           "title": "ゲーム悪役貴族に転生した俺は、チート筋肉で無双する（5）",
           "author": "昼行燈/しいたけ元帥",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7050/9784098547050_1_37.jpg?_ex=200x200",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7050/9784098547050_1_38.jpg?_ex=200x200",
           "isbn": "9784098547050",
-          "amazon": "https://www.amazon.co.jp/dp/4098547058?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "amazon": "https://www.amazon.co.jp/dp/B0HCBFTPB4?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18705535%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0HCBFTPB4?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F471e4adccde2385cb500c05eef47bde4%2F"
@@ -508,6 +578,31 @@
           "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18673278%2F",
           "kindle": "https://www.amazon.co.jp/dp/B0HF75DK6R?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
           "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F9ddde1659a923eb8b78eee5e12dab1a8%2F"
+        },
+        {
+          "title": "とある町でおきた百の怪異について（下）",
+          "author": "八坂 アキヲ・相川 有",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0435/9784825100435_1_2.jpg?_ex=200x200",
+          "isbn": "9784825100435",
+          "amazon": "https://www.amazon.co.jp/dp/4825100430?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18673277%2F",
+          "kindle": "https://www.amazon.co.jp/dp/B0HF72PP7X?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2ee83386b470391192085e020190d6e4%2F"
+        }
+      ]
+    },
+    {
+      "name": "文藝春秋",
+      "titles": [
+        {
+          "title": "コミック 鬼平犯科帳128",
+          "author": "さいとう・たかを/池波 正太郎",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2280/9784160092280_1_2.jpg?_ex=200x200",
+          "isbn": "9784160092280",
+          "amazon": "https://www.amazon.co.jp/dp/4160092284?tag=shinkandana-22&linkCode=osi&th=1&psc=1",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18674207%2F",
+          "kindle": "",
+          "kobo": ""
         }
       ]
     },
