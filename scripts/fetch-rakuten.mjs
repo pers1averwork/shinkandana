@@ -267,6 +267,25 @@ async function main() {
     titles,
   }));
 
+  // 各出版社内のタイトルを「巻数が多い順」に並び替える
+  // （続いているシリーズ＝人気シリーズの代理指標として扱う。巻数が読み取れないものは末尾へ）
+  function extractVolume(title) {
+    const m = title.match(/[（(](\d+)[）)]|(\d+)\s*巻?\s*$/);
+    if (!m) return null;
+    const n = m[1] || m[2];
+    return n ? parseInt(n, 10) : null;
+  }
+  for (const pub of publishers) {
+    pub.titles.sort((a, b) => {
+      const va = extractVolume(a.title);
+      const vb = extractVolume(b.title);
+      if (va === null && vb === null) return 0;
+      if (va === null) return 1; // 巻数不明は後ろへ
+      if (vb === null) return -1;
+      return vb - va; // 巻数が多い順
+    });
+  }
+
   // 集英社・講談社・小学館・KADOKAWAを優先して先頭に表示し、それ以外は元の順序のまま後ろに続ける
   const PRIORITY = ["集英社", "講談社", "小学館", "KADOKAWA"];
   publishers.sort((a, b) => {
