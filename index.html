@@ -120,6 +120,22 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  // 日本時間(JST)基準で「今日」の日付文字列(YYYY-MM-DD)を得る
+  // （new Date().toISOString()はUTC基準になるため、深夜0時〜朝9時頃にズレて誤判定してしまうのを防ぐ）
+  function todayJSTStr() {
+    const now = new Date();
+    const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+    return jst.toISOString().slice(0, 10);
+  }
+
+  // YYYY-MM-DD文字列に日数を加減算した結果をYYYY-MM-DD文字列で返す（タイムゾーンに依存しない計算）
+  function addDaysStr(dateStr, days) {
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const utc = new Date(Date.UTC(y, m - 1, d));
+    utc.setUTCDate(utc.getUTCDate() + days);
+    return utc.toISOString().slice(0, 10);
+  }
+
   function renderStamp(dateStr) {
     const d = dateStr ? new Date(dateStr + "T00:00:00") : new Date();
     const stamp = document.getElementById("dateStamp");
@@ -144,7 +160,7 @@
 
     // 表示している発売日が「今日」と違う場合（=今日は新刊がなく翌日以降を表示している場合）は注記を出す
     const noticeEl = document.getElementById("dateNotice");
-    const todayStr = new Date().toISOString().slice(0, 10);
+    const todayStr = todayJSTStr();
     if (data.date && data.date !== todayStr) {
       noticeEl.textContent = "本日は発売がなかったため、直近の発売日（" + data.date + "）の新刊を表示しています。";
       noticeEl.style.display = "block";
@@ -155,9 +171,7 @@
     // 日付ナビゲーション（前の日はアーカイブへ、次はこのページ自体が最新なので表示なし）
     const dateNav = document.getElementById("dateNav");
     if (data.date) {
-      const prev = new Date(data.date + "T00:00:00");
-      prev.setDate(prev.getDate() - 1);
-      const prevStr = prev.toISOString().slice(0, 10);
+      const prevStr = addDaysStr(data.date, -1);
       dateNav.innerHTML =
         '<a href="/archive/' + prevStr + '.html">← ' + prevStr + '</a>' +
         '<span class="current">' + data.date + '</span>' +
