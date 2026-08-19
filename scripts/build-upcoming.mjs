@@ -18,6 +18,58 @@ function formatDateLabel(dateStr) {
   return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日（${DOW[d.getDay()]}）`;
 }
 
+function addDays(dateStr, days) {
+  const d = new Date(dateStr + "T00:00:00");
+  d.setDate(d.getDate() + days);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+// startDateから rangeDays 日分をカバーする月ごとのカレンダーグリッドを作る
+function renderCalendar(startDate, rangeDays, dateToIndex, todayStr) {
+  const endDate = addDays(startDate, rangeDays - 1);
+  const startD = new Date(startDate + "T00:00:00");
+  const endD = new Date(endDate + "T00:00:00");
+
+  const months = [];
+  let cursor = new Date(startD.getFullYear(), startD.getMonth(), 1);
+  const last = new Date(endD.getFullYear(), endD.getMonth(), 1);
+  while (cursor <= last) {
+    months.push({ year: cursor.getFullYear(), month: cursor.getMonth() });
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1);
+  }
+
+  return months
+    .map(({ year, month }) => {
+      const firstDow = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      const dowHeader = DOW.map((d) => `<div class="cal-dow">${d}</div>`).join("");
+      const blanks = Array.from({ length: firstDow }, () => `<div class="cal-cell"></div>`).join("");
+
+      const cells = Array.from({ length: daysInMonth }, (_, i) => {
+        const day = i + 1;
+        const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+        const idx = dateToIndex.get(dateStr);
+        const isToday = dateStr === todayStr;
+        if (idx !== undefined) {
+          return `<div class="cal-cell has-release${isToday ? " today" : ""}"><a href="#day-${idx}">${day}<span class="dot"></span></a></div>`;
+        }
+        return `<div class="cal-cell${isToday ? " today" : ""}">${day}</div>`;
+      }).join("");
+
+      return `
+    <div class="cal-month-title">${year}年${month + 1}月</div>
+    <div class="cal-grid">
+      ${dowHeader}
+      ${blanks}${cells}
+    </div>`;
+    })
+    .join("\n");
+}
+
 function renderCards(pub, accent) {
   return pub.titles.map((t) => `
         <div class="card" style="--accent:${accent}">
@@ -63,9 +115,11 @@ function renderUpcomingPage(data) {
   const title = "発売予定カレンダー | 今日の新刊棚";
   const description = `向こう${data.rangeDays}日分のコミック新刊発売予定を、日付ごとにまとめています。`;
 
-  const tocHtml = (data.days ?? [])
-    .map((d, i) => `<a href="#day-${i}">${d.date.slice(5)}</a>`)
-    .join("\n    ");
+  const dateToIndex = new Map((data.days ?? []).map((d, i) => [d.date, i]));
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const calendarHtml = data.startDate
+    ? renderCalendar(data.startDate, data.rangeDays, dateToIndex, todayStr)
+    : "";
 
   const bodyMain = (data.days ?? []).length > 0
     ? data.days.map((d, i) => renderDaySection(d, i)).join("\n")
@@ -104,9 +158,9 @@ function renderUpcomingPage(data) {
     <p class="site-sub" style="margin-top:8px;">向こう${data.rangeDays}日分の発売予定（予約段階の情報のため、変更されることがあります）</p>
   </header>
 
-  <nav class="toc">
-    ${tocHtml}
-  </nav>
+  <div class="cal-wrap">
+    ${calendarHtml}
+  </div>
 
   <main>
     ${bodyMain}

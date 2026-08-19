@@ -214,6 +214,7 @@ async function main() {
 
   const data = {
     generatedAt: new Date().toISOString(),
+    startDate: today,
     rangeDays: UPCOMING_DAYS,
     days,
   };
