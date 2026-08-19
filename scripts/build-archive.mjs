@@ -192,6 +192,7 @@ async function buildSitemap(dates) {
   const urls = [
     `  <url>\n    <loc>${SITE_URL}/</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
     `  <url>\n    <loc>${SITE_URL}/archive/</loc>\n    <changefreq>daily</changefreq>\n    <priority>0.5</priority>\n  </url>`,
+    `  <url>\n    <loc>${SITE_URL}/upcoming/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>`,
     ...dates.map(
       (d) => `  <url>\n    <loc>${SITE_URL}/archive/${d}.html</loc>\n    <changefreq>never</changefreq>\n    <priority>0.3</priority>\n  </url>`
     ),
