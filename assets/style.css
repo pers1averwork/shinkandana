@@ -103,6 +103,32 @@ header {
   .stamp { position: static; margin: 20px auto 0; }
 }
 
+/* --- サイト内ナビゲーション（カレンダー・アーカイブへの導線） --- */
+.site-nav {
+  max-width: 960px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.site-nav a:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 /* --- 目次（出版社アンカー） --- */
 nav.toc {
   max-width: 960px;
