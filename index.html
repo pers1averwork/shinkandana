@@ -173,14 +173,16 @@
       noticeEl.style.display = "none";
     }
 
-    // 日付ナビゲーション（前の日はアーカイブへ、次はこのページ自体が最新なので表示なし）
+    // 日付ナビゲーション（前の日はアーカイブへ、翌日はまだ存在しないこともあるが
+    // 翌日分のアーカイブが生成された時点でつながるよう、あらかじめリンクにしておく）
     const dateNav = document.getElementById("dateNav");
     if (data.date) {
       const prevStr = addDaysStr(data.date, -1);
+      const nextStr = addDaysStr(data.date, 1);
       dateNav.innerHTML =
         '<a href="/archive/' + prevStr + '.html">← ' + prevStr + '</a>' +
         '<span class="current">' + data.date + '</span>' +
-        '<span class="disabled">最新 →</span>';
+        '<a href="/archive/' + nextStr + '.html">' + nextStr + ' →</a>';
     }
 
     if (!data.publishers || data.publishers.length === 0) {
@@ -208,16 +210,16 @@
             ${t.image
               ? `<img src="${t.image}" alt="${escapeHtml(t.title)}の表紙" loading="lazy">`
               : `<span class="thumb-fallback">${escapeHtml((t.title || "?").charAt(0))}</span>`}
-          </div>
-          <div class="body">
-            <div class="title">${escapeHtml(t.title)}</div>
-            <div class="author">${escapeHtml(t.author || "")}</div>
             <div class="links">
               ${t.amazon ? `<a href="${t.amazon}" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>` : ""}
               ${t.kindle ? `<a href="${t.kindle}" target="_blank" rel="nofollow sponsored noopener">Kindleで見る</a>` : ""}
               ${t.rakuten ? `<a href="${t.rakuten}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>` : ""}
               ${t.kobo ? `<a href="${t.kobo}" target="_blank" rel="nofollow sponsored noopener">Koboで見る</a>` : ""}
             </div>
+          </div>
+          <div class="body">
+            <div class="title">${escapeHtml(t.title)}</div>
+            <div class="author">${escapeHtml(t.author || "")}</div>
           </div>
         </div>
       `).join("");
