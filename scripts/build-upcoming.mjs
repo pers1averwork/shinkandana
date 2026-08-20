@@ -1,5 +1,7 @@
-// upcoming.json から、月間カレンダーグリッド＋日付ごとの詳細一覧を持つ
-// 「発売予定カレンダー」ページ（/upcoming/index.html）を生成するスクリプト。
+// upcoming.json から、
+//   /upcoming/index.html … 月間カレンダーグリッドのみのページ（各日付は個別ページへリンク）
+//   /upcoming/YYYY-MM-DD.html … その日だけの発売予定ページ（カレンダー付き）
+// を生成するスクリプト。
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 
@@ -19,16 +21,17 @@ function formatDateLabel(dateStr) {
 }
 
 function addDays(dateStr, days) {
-  const d = new Date(dateStr + "T00:00:00");
-  d.setDate(d.getDate() + days);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const utc = new Date(Date.UTC(y, m - 1, d));
+  utc.setUTCDate(utc.getUTCDate() + days);
+  const yy = utc.getUTCFullYear();
+  const mm = String(utc.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(utc.getUTCDate()).padStart(2, "0");
+  return `${yy}-${mm}-${dd}`;
 }
 
-// startDateから rangeDays 日分をカバーする月ごとのカレンダーグリッドを作る
-function renderCalendar(startDate, rangeDays, dateToIndex, todayStr) {
+// startDateから rangeDays 日分をカバーする月ごとのカレンダーグリッドを作る。
+function renderCalendar(startDate, rangeDays, releaseDates, todayStr, currentDate) {
   const endDate = addDays(startDate, rangeDays - 1);
   const startD = new Date(startDate + "T00:00:00");
   const endD = new Date(endDate + "T00:00:00");
@@ -43,21 +46,29 @@ function renderCalendar(startDate, rangeDays, dateToIndex, todayStr) {
 
   return months
     .map(({ year, month }) => {
+      const dowHeader = DOW.map((d) => `<div class="cal-dow">${d}</div>`).join("");
       const firstDow = new Date(year, month, 1).getDay();
       const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-      const dowHeader = DOW.map((d) => `<div class="cal-dow">${d}</div>`).join("");
       const blanks = Array.from({ length: firstDow }, () => `<div class="cal-cell"></div>`).join("");
 
       const cells = Array.from({ length: daysInMonth }, (_, i) => {
         const day = i + 1;
         const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-        const idx = dateToIndex.get(dateStr);
         const isToday = dateStr === todayStr;
-        if (idx !== undefined) {
-          return `<div class="cal-cell has-release${isToday ? " today" : ""}"><a href="#day-${idx}">${day}<span class="dot"></span></a></div>`;
+        const isCurrent = dateStr === currentDate;
+        const hasRelease = releaseDates.has(dateStr);
+        const classes = ["cal-cell"];
+        if (hasRelease) classes.push("has-release");
+        if (isToday) classes.push("today");
+        if (isCurrent) classes.push("current-day");
+
+        if (hasRelease && !isCurrent) {
+          return `<div class="${classes.join(" ")}"><a href="/upcoming/${dateStr}.html">${day}<span class="dot"></span></a></div>`;
         }
-        return `<div class="cal-cell${isToday ? " today" : ""}">${day}</div>`;
+        if (hasRelease && isCurrent) {
+          return `<div class="${classes.join(" ")}"><span>${day}<span class="dot"></span></span></div>`;
+        }
+        return `<div class="${classes.join(" ")}">${day}</div>`;
       }).join("");
 
       return `
@@ -82,49 +93,15 @@ function renderCards(pub, accent) {
             <div class="title">${escapeHtml(t.title)}</div>
             <div class="author">${escapeHtml(t.author || "")}</div>
             <div class="links">
+              ${t.amazon ? `<a href="${t.amazon}" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>` : ""}
+              ${t.kindle ? `<a href="${t.kindle}" target="_blank" rel="nofollow sponsored noopener">Kindleで見る</a>` : ""}
               ${t.rakuten ? `<a href="${t.rakuten}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>` : ""}
             </div>
           </div>
         </div>`).join("");
 }
 
-function renderDaySection(day, dayIndex) {
-  const dateLabel = formatDateLabel(day.date);
-  const pubSections = (day.publishers ?? [])
-    .map((pub, i) => {
-      const accent = ACCENTS[i % ACCENTS.length];
-      return `
-      <div class="publisher-head" style="--accent:${accent}">
-        <span class="bar"></span>
-        <h3 style="margin:0;">${escapeHtml(pub.name)}</h3>
-        <span class="count">${pub.titles.length}冊</span>
-      </div>
-      <div class="titles">${renderCards(pub, accent)}
-      </div>`;
-    })
-    .join("\n");
-
-  return `
-  <section class="publisher" id="day-${dayIndex}">
-    <h2 style="font-family:'Noto Serif JP',serif; border-bottom:2px solid var(--ink); padding-bottom:8px;">${dateLabel}</h2>
-    ${pubSections}
-  </section>`;
-}
-
-function renderUpcomingPage(data) {
-  const title = "発売予定カレンダー | 今日の新刊棚";
-  const description = `向こう${data.rangeDays}日分のコミック新刊発売予定を、日付ごとにまとめています。`;
-
-  const dateToIndex = new Map((data.days ?? []).map((d, i) => [d.date, i]));
-  const todayStr = new Date().toISOString().slice(0, 10);
-  const calendarHtml = data.startDate
-    ? renderCalendar(data.startDate, data.rangeDays, dateToIndex, todayStr)
-    : "";
-
-  const bodyMain = (data.days ?? []).length > 0
-    ? data.days.map((d, i) => renderDaySection(d, i)).join("\n")
-    : `<div class="empty">発売予定の情報がまだありません。</div>`;
-
+function pageShell({ title, description, canonicalPath, bodyInner }) {
   return `<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -132,11 +109,11 @@ function renderUpcomingPage(data) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="canonical" href="${SITE_URL}/upcoming/">
+<link rel="canonical" href="${SITE_URL}${canonicalPath}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escapeHtml(title)}">
 <meta property="og:description" content="${escapeHtml(description)}">
-<meta property="og:url" content="${SITE_URL}/upcoming/">
+<meta property="og:url" content="${SITE_URL}${canonicalPath}">
 <meta property="og:site_name" content="今日の新刊棚">
 <meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,7 +122,32 @@ function renderUpcomingPage(data) {
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+${bodyInner}
+</body>
+</html>
+`;
+}
 
+function footerHtml() {
+  return `
+  <footer>
+    <div class="inner">
+      <h3>アフィリエイト表記</h3>
+      <p>当サイトは、Amazon.co.jpを宣伝しリンクすることによって収入を得ることができる仕組みである、Amazonアソシエイト・プログラムの参加者です。また、楽天グループ株式会社が運営する「楽天アフィリエイト」の参加者でもあります。掲載されている商品リンクを経由して商品が購入された場合、当サイトに紹介料が支払われることがあります。</p>
+      <p style="text-align:center; margin-top:24px;"><a href="/" style="text-decoration:underline;">今日の新刊棚トップへ</a></p>
+      <p class="copyright">&copy; ${new Date().getFullYear()} 今日の新刊棚</p>
+    </div>
+  </footer>`;
+}
+
+function renderIndexPage(data, releaseDates, todayStr) {
+  const title = "発売予定カレンダー | 今日の新刊棚";
+  const description = `向こう${data.rangeDays}日分のコミック新刊発売予定を、カレンダー形式でまとめています。`;
+  const calendarHtml = data.startDate
+    ? renderCalendar(data.startDate, data.rangeDays, releaseDates, todayStr, null)
+    : "";
+
+  const bodyInner = `
   <div class="disclosure">
     本サイトはAmazonアソシエイト・プログラム及び楽天アフィリエイトの参加者であり、商品の購入により収益を得ることがあります。
   </div>
@@ -165,22 +167,60 @@ function renderUpcomingPage(data) {
   <div class="cal-wrap">
     ${calendarHtml}
   </div>
+  ${releaseDates.size === 0 ? '<div class="empty">発売予定の情報がまだありません。</div>' : ""}
+${footerHtml()}`;
+
+  return pageShell({ title, description, canonicalPath: "/upcoming/", bodyInner });
+}
+
+function renderDayPage(data, day, releaseDates, todayStr) {
+  const dateLabel = formatDateLabel(day.date);
+  const title = `${dateLabel}発売予定のコミック新刊 | 今日の新刊棚`;
+  const description = `${dateLabel}に発売予定のコミック新刊を、出版社別にまとめています（予約段階の情報です）。`;
+
+  const calendarHtml = data.startDate
+    ? renderCalendar(data.startDate, data.rangeDays, releaseDates, todayStr, day.date)
+    : "";
+
+  const pubSections = (day.publishers ?? [])
+    .map((pub, i) => {
+      const accent = ACCENTS[i % ACCENTS.length];
+      return `
+    <section class="publisher">
+      <div class="publisher-head" style="--accent:${accent}">
+        <span class="bar"></span>
+        <h2 style="margin:0;">${escapeHtml(pub.name)}</h2>
+        <span class="count">${pub.titles.length}冊</span>
+      </div>
+      <div class="titles">${renderCards(pub, accent)}
+      </div>
+    </section>`;
+    })
+    .join("\n");
+
+  const bodyInner = `
+  <div class="disclosure">
+    本サイトはAmazonアソシエイト・プログラム及び楽天アフィリエイトの参加者であり、商品の購入により収益を得ることがあります。
+  </div>
+
+  <div class="back-link"><a href="/upcoming/">← 発売予定カレンダーに戻る</a></div>
+
+  <header>
+    <p class="site-sub">今日の新刊棚 / 発売予定</p>
+    <h1 class="site-title" style="font-size:1.6rem;">${dateLabel}</h1>
+    <p class="site-sub" style="margin-top:8px; font-size:0.78rem;">予約段階の情報のため、内容が変更されることがあります</p>
+  </header>
+
+  <div class="cal-wrap">
+    ${calendarHtml}
+  </div>
 
   <main>
-    ${bodyMain}
+    ${pubSections}
   </main>
+${footerHtml()}`;
 
-  <footer>
-    <div class="inner">
-      <h3>アフィリエイト表記</h3>
-      <p>当サイトは、Amazon.co.jpを宣伝しリンクすることによって収入を得ることができる仕組みである、Amazonアソシエイト・プログラムの参加者です。また、楽天グループ株式会社が運営する「楽天アフィリエイト」の参加者でもあります。掲載されている商品リンクを経由して商品が購入された場合、当サイトに紹介料が支払われることがあります。</p>
-      <p style="text-align:center; margin-top:24px;"><a href="/" style="text-decoration:underline;">今日の新刊棚トップへ</a></p>
-      <p class="copyright">&copy; ${new Date().getFullYear()} 今日の新刊棚</p>
-    </div>
-  </footer>
-</body>
-</html>
-`;
+  return pageShell({ title, description, canonicalPath: `/upcoming/${day.date}.html`, bodyInner });
 }
 
 async function main() {
@@ -190,9 +230,19 @@ async function main() {
   const upcomingDir = new URL("../upcoming/", import.meta.url);
   await mkdir(upcomingDir, { recursive: true });
 
-  const html = renderUpcomingPage(data);
-  await writeFile(new URL("index.html", upcomingDir), html, "utf-8");
-  console.log(`upcoming/index.html を書き出しました（${data.days.length}日分）`);
+  const days = data.days ?? [];
+  const releaseDates = new Set(days.map((d) => d.date));
+  const todayStr = new Date().toISOString().slice(0, 10);
+
+  const indexHtml = renderIndexPage(data, releaseDates, todayStr);
+  await writeFile(new URL("index.html", upcomingDir), indexHtml, "utf-8");
+  console.log(`upcoming/index.html を書き出しました（${days.length}日分）`);
+
+  for (const day of days) {
+    const html = renderDayPage(data, day, releaseDates, todayStr);
+    await writeFile(new URL(`${day.date}.html`, upcomingDir), html, "utf-8");
+  }
+  console.log(`upcoming/YYYY-MM-DD.html を ${days.length}件 書き出しました`);
 }
 
 main().catch((err) => {
