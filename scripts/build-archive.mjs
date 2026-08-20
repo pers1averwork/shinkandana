@@ -172,6 +172,10 @@ function renderIndexPage(dates) {
     <h1 class="site-title">過去の新刊一覧</h1>
   </header>
 
+  <nav class="site-nav">
+    <a href="/upcoming/">📅 発売予定カレンダー</a>
+  </nav>
+
   <div class="archive-list">
     <ul>
         ${items}

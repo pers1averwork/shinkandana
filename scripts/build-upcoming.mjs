@@ -158,6 +158,10 @@ function renderUpcomingPage(data) {
     <p class="site-sub" style="margin-top:8px;">向こう${data.rangeDays}日分の発売予定（予約段階の情報のため、変更されることがあります）</p>
   </header>
 
+  <nav class="site-nav">
+    <a href="/archive/">📚 過去の新刊一覧</a>
+  </nav>
+
   <div class="cal-wrap">
     ${calendarHtml}
   </div>
