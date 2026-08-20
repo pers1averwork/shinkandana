@@ -29,6 +29,13 @@ jobs:
           UPCOMING_DAYS: "30"
         run: node scripts/fetch-upcoming.mjs
 
+      - name: Amazon Creators APIで商品リンクを取得
+        env:
+          AMAZON_CREDENTIAL_ID: ${{ secrets.AMAZON_CREDENTIAL_ID }}
+          AMAZON_CREDENTIAL_SECRET: ${{ secrets.AMAZON_CREDENTIAL_SECRET }}
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+        run: node scripts/fetch-amazon-upcoming.mjs
+
       - name: 発売予定カレンダーページを生成
         run: node scripts/build-upcoming.mjs
 
