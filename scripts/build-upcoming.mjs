@@ -88,15 +88,15 @@ function renderCards(pub, accent) {
             ${t.image
               ? `<img src="${t.image}" alt="${escapeHtml(t.title)}の表紙" loading="lazy">`
               : `<span class="thumb-fallback">${escapeHtml((t.title || "?").charAt(0))}</span>`}
-          </div>
-          <div class="body">
-            <div class="title">${escapeHtml(t.title)}</div>
-            <div class="author">${escapeHtml(t.author || "")}</div>
             <div class="links">
               ${t.amazon ? `<a href="${t.amazon}" target="_blank" rel="nofollow sponsored noopener">Amazonで見る</a>` : ""}
               ${t.kindle ? `<a href="${t.kindle}" target="_blank" rel="nofollow sponsored noopener">Kindleで見る</a>` : ""}
               ${t.rakuten ? `<a href="${t.rakuten}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>` : ""}
             </div>
+          </div>
+          <div class="body">
+            <div class="title">${escapeHtml(t.title)}</div>
+            <div class="author">${escapeHtml(t.author || "")}</div>
           </div>
         </div>`).join("");
 }
