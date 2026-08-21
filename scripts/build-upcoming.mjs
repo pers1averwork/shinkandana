@@ -123,6 +123,7 @@ function pageShell({ title, description, canonicalPath, bodyInner }) {
 </head>
 <body>
 ${bodyInner}
+<script src="/assets/thumb-toggle.js" defer></script>
 </body>
 </html>
 `;

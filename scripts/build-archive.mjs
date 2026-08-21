@@ -138,6 +138,7 @@ function renderArchivePage(data, prevDate, nextDate) {
       <p class="copyright">&copy; ${new Date().getFullYear()} 今日の新刊棚</p>
     </div>
   </footer>
+<script src="/assets/thumb-toggle.js" defer></script>
 </body>
 </html>
 `;
