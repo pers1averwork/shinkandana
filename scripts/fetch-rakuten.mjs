@@ -95,14 +95,29 @@ async function fetchPage(page, retry = 0) {
   return JSON.parse(body);
 }
 
+// 波ダッシュ・スペース・カッコ書きなどの表記ゆれを吸収して比較する
+function normalizeForCompareKobo(s) {
+  return (s || "")
+    .replace(/[〜～~]/g, "")
+    .replace(/[　\s]/g, "")
+    .replace(/[（(].*?[）)]/g, "")
+    .replace(/[【】「」『』]/g, "");
+}
+
+let koboDebugCount = 0;
+
 async function fetchKoboLink(title, retry = 0) {
+  // タイトル＋巻数をまとめて検索すると表記ゆれで引っかからないことがあるため、
+  // シリーズ名部分だけを検索キーワードにする（巻数は後で候補から絞り込む）
+  const seriesName = title.replace(/[（(]?\d+[）)]?\s*巻?\s*$/, "").trim() || title;
+
   const url = new URL("https://openapi.rakuten.co.jp/services/api/Kobo/EbookSearch/20170426");
   url.searchParams.set("format", "json");
   url.searchParams.set("applicationId", APP_ID);
   url.searchParams.set("accessKey", ACCESS_KEY);
   url.searchParams.set("affiliateId", AFFILIATE_ID);
-  url.searchParams.set("keyword", title);
-  url.searchParams.set("hits", "5");
+  url.searchParams.set("keyword", seriesName);
+  url.searchParams.set("hits", "10");
 
   const { status, body } = await httpsGet(url, {
     Referer: "https://shinkandana.jp/",
@@ -116,24 +131,40 @@ async function fetchKoboLink(title, retry = 0) {
   }
 
   if (status < 200 || status >= 300) {
-    console.log(`Kobo検索失敗（${title}）: ${status}`);
+    console.log(`Kobo検索失敗（${title}）: ${status} ${body.slice(0, 200)}`);
     return "";
   }
 
   const data = JSON.parse(body);
   const items = (data.Items ?? []).map((wrap) => wrap.Item);
-  if (items.length === 0) return "";
 
-  // 巻数（末尾の数字）が一致する候補があれば優先する
-  // （複数巻あるシリーズで、違う巻のリンクが付いてしまうのを防ぐため）
-  const volMatch = title.match(/(\d+)\s*巻?$/);
-  if (volMatch) {
-    const vol = volMatch[1];
-    const sameVol = items.find((it) => new RegExp(`(^|\\D)${vol}(\\D|$)`).test(it.title || ""));
+  if (items.length === 0) {
+    console.log(`Kobo該当なし（検索語: ${seriesName}）`);
+    return "";
+  }
+
+  // シリーズ名の先頭部分が含まれている候補だけに絞る（無関係な作品が混ざるのを防ぐ）
+  const normalizedSeries = normalizeForCompareKobo(seriesName);
+  const keyChunk = normalizedSeries.slice(0, Math.min(8, normalizedSeries.length));
+  const relevant = items.filter((it) => normalizeForCompareKobo(it.title || "").includes(keyChunk));
+  const candidates = relevant.length > 0 ? relevant : items;
+
+  // 巻数（末尾の数字、カッコ書きの数字どちらにも対応）が一致する候補があれば優先する
+  const volMatch = title.match(/[（(](\d+)[）)]|(\d+)\s*巻?$/);
+  const vol = volMatch ? (volMatch[1] || volMatch[2]) : null;
+  if (vol) {
+    const sameVol = candidates.find((it) =>
+      new RegExp(`[（(]${vol}[）)]|(^|\\D)${vol}(\\D|$)`).test(it.title || "")
+    );
     if (sameVol) return sameVol.affiliateUrl || sameVol.itemUrl || "";
   }
 
-  return items[0].affiliateUrl || items[0].itemUrl || "";
+  if (koboDebugCount < 3) {
+    koboDebugCount += 1;
+    console.log(`Kobo診断（${title} → 検索語:${seriesName}）候補:`, candidates.map((it) => it.title).join(" / "));
+  }
+
+  return candidates[0].affiliateUrl || candidates[0].itemUrl || "";
 }
 
 // 日付文字列(YYYY-MM-DD)を1日進める
