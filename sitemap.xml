@@ -50,4 +50,9 @@
     <changefreq>never</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://shinkandana.jp/archive/2026-08-28.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
