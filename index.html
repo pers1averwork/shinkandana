@@ -173,8 +173,7 @@
       noticeEl.style.display = "none";
     }
 
-    // 日付ナビゲーション（前の日はアーカイブへ、翌日はまだ存在しないこともあるが
-    // 翌日分のアーカイブが生成された時点でつながるよう、あらかじめリンクにしておく）
+    // 日付ナビゲーション（前の日はアーカイブへ。翌日は実際にページが存在する場合のみリンクにする）
     const dateNav = document.getElementById("dateNav");
     if (data.date) {
       const prevStr = addDaysStr(data.date, -1);
@@ -182,7 +181,19 @@
       dateNav.innerHTML =
         '<a href="/archive/' + prevStr + '.html">← ' + prevStr + '</a>' +
         '<span class="current">' + data.date + '</span>' +
-        '<a href="/archive/' + nextStr + '.html">' + nextStr + ' →</a>';
+        '<span class="disabled" id="nextDateSlot">最新</span>';
+
+      // 翌日分のアーカイブページが本当に存在するか確認してから、あればリンクに差し替える
+      fetch('/archive/' + nextStr + '.html', { method: 'HEAD' })
+        .then((res) => {
+          if (res.ok) {
+            const slot = document.getElementById('nextDateSlot');
+            if (slot) {
+              slot.outerHTML = '<a href="/archive/' + nextStr + '.html">' + nextStr + ' →</a>';
+            }
+          }
+        })
+        .catch(() => {}); // 確認に失敗しても、非活性表示のままにしておく
     }
 
     if (!data.publishers || data.publishers.length === 0) {
