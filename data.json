@@ -1,318 +1,228 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "publishers": [
+    {
+      "name": "講談社",
+      "titles": [
+        {
+          "title": "クッキングパパ　パワフルみそ汁",
+          "author": "うえやま とち",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2899/9784065452899_1_2.jpg?_ex=200x200",
+          "isbn": "9784065452899",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18782965%2F",
+          "kindle": "",
+          "kobo": ""
+        }
+      ]
+    },
+    {
+      "name": "小学館",
+      "titles": [
+        {
+          "title": "あつまれ どうぶつの森 〜無人島Diary〜（14）",
+          "author": "ココナス ルンバ/任天堂",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3738/9784091543738_1_26.jpg?_ex=200x200",
+          "isbn": "9784091543738",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802620%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3ced521288983147a7f3cf3fb0191ea0%2F"
+        },
+        {
+          "title": "BEYBLADE X（ベイブレード エックス）（10）",
+          "author": "河本 ほむら/武野 光/出水 ぽすか/ZIONAO",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3714/9784091543714_1_9.jpg?_ex=200x200",
+          "isbn": "9784091543714",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802618%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3fa536c82e1b3124a597436b185f063f%2F"
+        },
+        {
+          "title": "まいぜんシスターズ（6）",
+          "author": "永井 ゆうじ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3653/9784091543653_1_24.jpg?_ex=200x200",
+          "isbn": "9784091543653",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18767455%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F979ed02364643b23afef31271b607c99%2F"
+        },
+        {
+          "title": "デュエル・マスターズ愛蔵版（6）",
+          "author": "松本 しげのぶ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3790/9784091543790_1_26.jpg?_ex=200x200",
+          "isbn": "9784091543790",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802625%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4c86ef426d6d35e09c74864a37f7c08b%2F"
+        },
+        {
+          "title": "私立すとぷり小学校（5）",
+          "author": "山内 コウタロウ/秋野 ハロ/ななもり。（すとぷり）",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3783/9784091543783_1_26.jpg?_ex=200x200",
+          "isbn": "9784091543783",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802624%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F46ccfb77fb543c59aead6442d8de355e%2F"
+        },
+        {
+          "title": "つよいぞ！ムテキッズ（2）",
+          "author": "すけまる",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3776/9784091543776_1_24.jpg?_ex=200x200",
+          "isbn": "9784091543776",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790297%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F9be854258a25326ea80288ac1703b9c3%2F"
+        },
+        {
+          "title": "超限マーケットヒーローズ メンコリバーサーカケル（2）",
+          "author": "浪川 修作/深見 真",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3721/9784091543721_1_25.jpg?_ex=200x200",
+          "isbn": "9784091543721",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802619%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fd763c8ad32773cc996b54a362ed0c262%2F"
+        },
+        {
+          "title": "イナズマイレブン 英雄たちのヴィクトリーロード（2）",
+          "author": "やぶの てんや/レベルファイブ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3745/9784091543745_1_24.jpg?_ex=200x200",
+          "isbn": "9784091543745",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802621%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3a96e82f8ebd3d33893d39d2acd0cbbe%2F"
+        },
+        {
+          "title": "幽拐少女（2）",
+          "author": "もり ちかこ/第四境界",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3769/9784091543769_1_25.jpg?_ex=200x200",
+          "isbn": "9784091543769",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802623%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F25496a3178f138738cf2d0bcff24ecfd%2F"
+        },
+        {
+          "title": "イナズマイレブンGO 完全版（上巻）",
+          "author": "やぶの てんや/レベルファイブ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3813/9784091543813_1_24.jpg?_ex=200x200",
+          "isbn": "9784091543813",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802627%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ffdca33671988306b8e28ca40676dc7f2%2F"
+        },
+        {
+          "title": "でんぢゃらすじーさん傑作選「絶体絶命」編",
+          "author": "曽山 一寿",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3806/9784091543806_1_26.jpg?_ex=200x200",
+          "isbn": "9784091543806",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802626%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0757adef5a9c353c840da2cba61bcb9e%2F"
+        }
+      ]
+    },
     {
       "name": "KADOKAWA",
       "titles": [
         {
-          "title": "とある魔術の禁書目録外伝 とある科学の超電磁砲（21）",
-          "author": "鎌池　和馬/冬川　基/はいむら　きよたか",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4314/9784049524314_1_11.jpg?_ex=200x200",
-          "isbn": "9784049524314",
+          "title": "【新装版】クレバテスー魔獣の王と赤子と屍の勇者ー　14",
+          "author": "岩原　裕二",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2277/9784049722277_1_6.jpg?_ex=200x200",
+          "isbn": "9784049722277",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18691925%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4b05905cdbc73358880bc03f5b27f4e1%2F"
-        },
-        {
-          "title": "私を喰べたい、ひとでなし 13",
-          "author": "苗川　采",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4185/9784049524185_1_12.jpg?_ex=200x200",
-          "isbn": "9784049524185",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18737912%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F47354d2de11335c89985d662185dab43%2F"
-        },
-        {
-          "title": "死神に育てられた少女は漆黒の剣を胸に抱く 10",
-          "author": "松風　水蓮/彩峰　舞人/シエラ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5120/9784049525120_1_9.jpg?_ex=200x200",
-          "isbn": "9784049525120",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790317%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fa16edafac5ba33518259a2dbde3e00ea%2F"
-        },
-        {
-          "title": "安達としまむら（9）",
-          "author": "柚原　もけ/入間　人間/のん",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5045/9784049525045_1_10.jpg?_ex=200x200",
-          "isbn": "9784049525045",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790322%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F68462321fa4c3e36b8678d2dbdbfd86b%2F"
-        },
-        {
-          "title": "晴れ晴れ日和　9",
-          "author": "吉村佳",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7393/9784046607393_1_6.jpg?_ex=200x200",
-          "isbn": "9784046607393",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790445%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F9945d3b5f9493a188647844785edaf08%2F"
-        },
-        {
-          "title": "レプリカだって、恋をする。7",
-          "author": "花田　ももせ/榛名丼/raemz",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4673/9784049524673_1_15.jpg?_ex=200x200",
-          "isbn": "9784049524673",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790509%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fa2675724fd6637ff869bdeb3da618155%2F"
-        },
-        {
-          "title": "TS衛生兵さんの戦場日記 5",
-          "author": "耳式/まさきたま/クレタ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4727/9784049524727_1_4.jpg?_ex=200x200",
-          "isbn": "9784049524727",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790505%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F5bf8ffbc006e3cc4b34d8c86b0cad3f9%2F"
-        },
-        {
-          "title": "スキル『植樹』を使って追放先でのんびり開拓はじめます 5",
-          "author": "千嶌　オワリ/しんこせい/あんべよしろう",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4703/9784049524703_1_4.jpg?_ex=200x200",
-          "isbn": "9784049524703",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790502%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F8144cd25db9a302a8bdcf6b7eb87063d%2F"
-        },
-        {
-          "title": "くたびれサラリーマンな俺、7年ぶりに再会した美少女JKと同棲を始める(4)",
-          "author": "ばふぁこ/上村　夏樹/Parum",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5076/9784049525076_1_9.jpg?_ex=200x200",
-          "isbn": "9784049525076",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790318%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F77690d9c3e2c35b881b00b014ea0af7b%2F"
-        },
-        {
-          "title": "僕の彼女はデッカワイイ 4",
-          "author": "sanorin",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5106/9784049525106_1_11.jpg?_ex=200x200",
-          "isbn": "9784049525106",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790313%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ffd84bb5ef5023286bd0ae67b36a5b913%2F"
-        },
-        {
-          "title": "冒険者酒場の料理人 (4)",
-          "author": "飴井　涼/黒留　ハガネ/転",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4741/9784049524741_1_4.jpg?_ex=200x200",
-          "isbn": "9784049524741",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790504%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fbf3b41ebbca737cc8f772d5fbe85febc%2F"
-        },
-        {
-          "title": "金属スライムを倒しまくった俺が【黒鋼の王】と呼ばれるまで 4",
-          "author": "藤屋　いずこ/温泉　カピバラ/山椒魚",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4697/9784049524697_1_5.jpg?_ex=200x200",
-          "isbn": "9784049524697",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790507%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F680123c1198138d88ce602e3e828ec9f%2F"
-        },
-        {
-          "title": "可愛原先輩はかわいい（早乙女くん）がすき！　3",
-          "author": "せらみっく",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5665/9784046605665_1_6.jpg?_ex=200x200",
-          "isbn": "9784046605665",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790380%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4665fc7d39913a0eb9378aa8e03d35ff%2F"
-        },
-        {
-          "title": "悪役令息に転生したけど幼馴染のママ♂になるぞ！　3",
-          "author": "パラリラ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4484/9784046604484_1_12.jpg?_ex=200x200",
-          "isbn": "9784046604484",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790409%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F97b01960963b3748a12b6a8282b3f312%2F"
-        },
-        {
-          "title": "OVER MATE　2",
-          "author": "Gyoniku",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6006/9784046606006_1_13.jpg?_ex=200x200",
-          "isbn": "9784046606006",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790435%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F06de2d689145325599ecd20ffa8753a2%2F"
-        },
-        {
-          "title": "ブラッド・エンド・ラブ　2",
-          "author": "安住　露月",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6013/9784046606013_1_12.jpg?_ex=200x200",
-          "isbn": "9784046606013",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790436%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3ace119b25193fcf9d061619948f4383%2F"
-        },
-        {
-          "title": "ホームセンターごと呼び出された私の大迷宮リノベーション！ 2",
-          "author": "ばたっち/星崎　崑/志田",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4765/9784049524765_1_7.jpg?_ex=200x200",
-          "isbn": "9784049524765",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790496%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F24e0dafdbcbe300093c203ebfabe3793%2F"
-        },
-        {
-          "title": "めんとりさま 2",
-          "author": "筒井　いつき/カムリ/コタチユウ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3492/9784049523492_1_13.jpg?_ex=200x200",
-          "isbn": "9784049523492",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790498%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F438ff54fada83e63ac9146c501f47cba%2F"
-        },
-        {
-          "title": "よって、初恋は証明された。-デルタとガンマの理学部ノートー01",
-          "author": "逆井　卓馬/包実　らっぷ/遠坂　あさぎ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4819/9784049524819_1_17.jpg?_ex=200x200",
-          "isbn": "9784049524819",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18738068%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fd9c3da15174135b3b2bba43740828c32%2F"
-        },
-        {
-          "title": "僕は君とユメをみる。　1",
-          "author": "補欠",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6273/9784046606273_1_4.jpg?_ex=200x200",
-          "isbn": "9784046606273",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18762909%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4698d370824334f29d661acd99c6559e%2F"
-        },
-        {
-          "title": "彼女のカノジョと不純な初恋1",
-          "author": "Akeo/花宮　みぃ/塩こうじ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5083/9784049525083_1_7.jpg?_ex=200x200",
-          "isbn": "9784049525083",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790326%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F816dc00372f5325fa8f7879ed2b658ae%2F"
-        },
-        {
-          "title": "あたし達って付き合ってるよね!?　1",
-          "author": "涼風　そら",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7379/9784046607379_1_11.jpg?_ex=200x200",
-          "isbn": "9784046607379",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790443%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fe7bf8c406bcc39bd933576c7cba6e1ee%2F"
-        },
-        {
-          "title": "青春鉄道　2027年度版　百人一首風カルタ付き特装便ー読み札音声特典付きー",
-          "author": "青春",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4323/9784046604323_1_11.jpg?_ex=200x200",
-          "isbn": "9784046604323",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18667290%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18763033%2F",
           "kindle": "",
           "kobo": ""
         },
         {
-          "title": "青春鉄道　2027年度版",
-          "author": "青春",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4330/9784046604330_1_8.jpg?_ex=200x200",
-          "isbn": "9784046604330",
+          "title": "ティンカー・ベル 山岸凉子短篇ベストコレクション3",
+          "author": "山岸　凉子",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8102/9784041178102_1_5.jpg?_ex=200x200",
+          "isbn": "9784041178102",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18667291%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18791572%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4e95f4b1a3523622aee9d080a55731c0%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F1b05a30d2ed8331f80a76474033d4d97%2F"
         },
         {
-          "title": "左遷された無能王子は実力を隠したい8 〜二度転生した最強賢者、今世では楽したいので手を抜いてたら、王家を追放された。今更帰ってこいと言われても遅い、領民に実力がバレて、実家に帰してくれないから……〜",
-          "author": "茨木野/七桃　りお/ハル犬",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5090/9784049525090_1_12.jpg?_ex=200x200",
-          "isbn": "9784049525090",
+          "title": "木花佐久夜毘売 山岸凉子短篇ベストコレクション2",
+          "author": "山岸　凉子",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8089/9784041178089_1_5.jpg?_ex=200x200",
+          "isbn": "9784041178089",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790324%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18791569%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F5cd70d340aa93b12b20a9ad4102c5392%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F636f694a7f5e3858b6a9ee89974fd588%2F"
         },
         {
-          "title": "レアモンスター？それ、ただの害虫ですよ　6 〜知らぬ間にダンジョン化した自宅での日常生活が配信されてバズったんですが〜",
-          "author": "chippi/御手々　ぽんた/kodamazon",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5113/9784049525113_1_11.jpg?_ex=200x200",
-          "isbn": "9784049525113",
+          "title": "スミハルハンマー　1",
+          "author": "三ツ矢　だいふく",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2314/9784049722314_1_6.jpg?_ex=200x200",
+          "isbn": "9784049722314",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790312%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18763036%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F8644d694da6c31ceb938ce99ef72b851%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4102687b566639539ea7a1386655d861%2F"
         },
         {
-          "title": "つめさきメルトメロウ",
-          "author": "桔梗　シロ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6068/9784046606068_1_10.jpg?_ex=200x200",
-          "isbn": "9784046606068",
+          "title": "孤高なカノジョと、彼女の部屋でシてること1",
+          "author": "麦子/雲雀湯/三守　なかば",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1331/9784049721331_1_12.jpg?_ex=200x200",
+          "isbn": "9784049721331",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790444%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18762413%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F21cf89fa48c23dc1954157db4acf060a%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F6dc3dc68145e38d4bb32b0ef999dd59b%2F"
         },
         {
-          "title": "これはファンサじゃありません！",
-          "author": "下心　ぽよ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6075/9784046606075_1_10.jpg?_ex=200x200",
-          "isbn": "9784046606075",
+          "title": "鬼来迎 山岸凉子短篇ベストコレクション1",
+          "author": "山岸　凉子",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8096/9784041178096_1_5.jpg?_ex=200x200",
+          "isbn": "9784041178096",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790446%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18791570%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Feaa3fda5b24d359f8aecb81a722846b5%2F"
-        },
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F1ca2fb1b4923339b805545c4a6bd386d%2F"
+        }
+      ]
+    },
+    {
+      "name": "かや書房",
+      "titles": [
         {
-          "title": "俺の『全自動支援（フルオートバフ）』で仲間たちが世界最強9 〜そこにいるだけ無自覚無双〜",
-          "author": "IプルT/epina/片倉 響",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4253/9784049524253_1_12.jpg?_ex=200x200",
-          "isbn": "9784049524253",
+          "title": "亡霊学級オリジナル完全版",
+          "author": "つのだじろう",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6138/9784911636138_1_6.jpg?_ex=200x200",
+          "isbn": "9784911636138",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790534%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18741800%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fc4ece0b05b403bd7996d5b4e07802d41%2F"
-        },
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0c9af68c66513c9594c3ceaceff69a2a%2F"
+        }
+      ]
+    },
+    {
+      "name": "オークラ出版",
+      "titles": [
         {
-          "title": "剣と魔法と学歴社会 5 〜前世はガリ勉だった俺が、今世は風任せで自由に生きたい〜",
-          "author": "田辺　狭介/西浦真魚/まろ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4758/9784049524758_1_6.jpg?_ex=200x200",
-          "isbn": "9784049524758",
+          "title": "王子は無垢な神官をこよなく愛す1",
+          "author": "今 市子/釘宮つかさ/みずかねりょう",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0634/9784775530634_1_3.jpg?_ex=200x200",
+          "isbn": "9784775530634",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790497%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18767450%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F46f233fb40c1392bb891d2f92fad488c%2F"
-        },
-        {
-          "title": "勇者刑に処す 3 懲罰勇者9004隊刑務記録",
-          "author": "井上　菜摘/ロケット商会/めふぃすと",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4710/9784049524710_1_4.jpg?_ex=200x200",
-          "isbn": "9784049524710",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18790506%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fada01691efc2383482c8f1441ee5837c%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fb82220c154ce3a50adc17a9d12729b37%2F"
         }
       ]
     },
@@ -320,544 +230,99 @@
       "name": "一迅社",
       "titles": [
         {
-          "title": "異世界帰りの元勇者ですが、デスゲームに巻き込まれました (9)",
-          "author": "空地 大乃/黒山 メッキ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1722/9784825101722_1_2.jpg?_ex=200x200",
-          "isbn": "9784825101722",
+          "title": "ゆるゆり (25)",
+          "author": "なもり",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1753/9784825101753_1_2.jpg?_ex=200x200",
+          "isbn": "9784825101753",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768465%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768469%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fe732282df84d373caad9cb67c236078a%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F387fb286d48239e98d0835349931271f%2F"
         },
         {
-          "title": "死霊魔術の容疑者(4)",
-          "author": "駄犬/おにお",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1739/9784825101739_1_2.jpg?_ex=200x200",
-          "isbn": "9784825101739",
+          "title": "ゆるゆり (25) 特装版",
+          "author": "なもり",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1760/9784825101760_1_2.jpg?_ex=200x200",
+          "isbn": "9784825101760",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768467%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3f9215e4f27e3f1993bea9a11790b54c%2F"
-        },
-        {
-          "title": "あとはご自由にどうぞ！ 〜チュートリアルで神様がラスボスを倒しちゃったので私は好き放題生きていく〜(4)",
-          "author": "鬼影スパナ/かんむり/Ixy",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0909/9784825100909_1_2.jpg?_ex=200x200",
-          "isbn": "9784825100909",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768434%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F065810acd1083484acbd066f506e747f%2F"
-        },
-        {
-          "title": "NO CAT NO LIFE (1)",
-          "author": "てぐれ/SCP-040-JP　育良啓一郎",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0084/9784825100084_1_2.jpg?_ex=200x200",
-          "isbn": "9784825100084",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18631751%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0fd6e0d0ad3335358122691e77b1ce92%2F"
-        },
-        {
-          "title": "おちこぼれ勇者パーティの喫煙所(1)",
-          "author": "まもウィリアムズ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1746/9784825101746_1_2.jpg?_ex=200x200",
-          "isbn": "9784825101746",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768466%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fd760acd3045e3ab485d3c884c2c47967%2F"
-        }
-      ]
-    },
-    {
-      "name": "竹書房",
-      "titles": [
-        {
-          "title": "ストレートパンチ",
-          "author": "内田カヲル",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1095/9784801991095_1_5.jpg?_ex=200x200",
-          "isbn": "9784801991095",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18723217%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F16282f8ce2363359b78f8ce349d2d96a%2F"
-        },
-        {
-          "title": "こんなつもりじゃなかったのに",
-          "author": "逢野れお",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1101/9784801991101_1_7.jpg?_ex=200x200",
-          "isbn": "9784801991101",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802643%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fd78230c9da50359c8c867d766e27f3ce%2F"
-        }
-      ]
-    },
-    {
-      "name": "芳文社",
-      "titles": [
-        {
-          "title": "スロウスタート　14",
-          "author": "篤見唯子",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7593/9784832297593_1_2.jpg?_ex=200x200",
-          "isbn": "9784832297593",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18753453%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F251887efc60830eea1769924b59ccb28%2F"
-        },
-        {
-          "title": "スロウスタート　14",
-          "author": "篤見唯子",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7593/9784832297593_1_2.jpg?_ex=200x200",
-          "isbn": "9784832297593",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18753453%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F251887efc60830eea1769924b59ccb28%2F"
-        },
-        {
-          "title": "セーラー服と関西弁　2",
-          "author": "ライムマン",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7616/9784832297616_1_2.jpg?_ex=200x200",
-          "isbn": "9784832297616",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18753465%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F10ce8aa0e2483f2d9221bcf7786d70ab%2F"
-        },
-        {
-          "title": "アイドルノブナ☆ガール　2",
-          "author": "豪烈・弥太郎",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7609/9784832297609_1_2.jpg?_ex=200x200",
-          "isbn": "9784832297609",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18753461%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ff270d8869cf73ac5a59d06df7d5b84f9%2F"
-        },
-        {
-          "title": "アイドルノブナ☆ガール　2",
-          "author": "豪烈・弥太郎",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7609/9784832297609_1_2.jpg?_ex=200x200",
-          "isbn": "9784832297609",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18753461%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ff270d8869cf73ac5a59d06df7d5b84f9%2F"
-        }
-      ]
-    },
-    {
-      "name": "秋田書店",
-      "titles": [
-        {
-          "title": "ラーメン大好き小泉さん　16",
-          "author": "鳴見なる",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0183/9784253020183_1_34.jpg?_ex=200x200",
-          "isbn": "9784253020183",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754160%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fe7da471c2f933ed2aa136bdfeb9f55f4%2F"
-        },
-        {
-          "title": "明日の敵と今日の握手を　9",
-          "author": "カルロ・ゼン/フクダイクミ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0442/9784253020442_1_13.jpg?_ex=200x200",
-          "isbn": "9784253020442",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754229%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F9a0448a2de6b3431bb9faa896b097ddd%2F"
-        },
-        {
-          "title": "祝・聖女になれませんでした。　このままステルスしたいのですが、悪役顔と精霊に愛され体質のせいでやっぱり色々起こります　3",
-          "author": "野菜ばたけ/森月いち/ののまろ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0473/9784253020473_1_11.jpg?_ex=200x200",
-          "isbn": "9784253020473",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754225%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F509ac02be0b03c3aa7813d551766b446%2F"
-        },
-        {
-          "title": "ネットアイドルの配信を手伝っていたマネージャーの俺、なぜかバズってしまう　3",
-          "author": "木嶋隆太/許瑞峰 / べに時雨",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0459/9784253020459_1_13.jpg?_ex=200x200",
-          "isbn": "9784253020459",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754226%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F9b4ea38f52863c4ca35bfd16dd1ebea9%2F"
-        },
-        {
-          "title": "白い結婚から三年。旦那様、私と離縁してください　3",
-          "author": "椿蛍/雪村理子",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0466/9784253020466_1_13.jpg?_ex=200x200",
-          "isbn": "9784253020466",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754227%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ff1ff4d6498fb3ebdb8ae2cf990bf1d1f%2F"
-        },
-        {
-          "title": "ダンジョンおじさん　3",
-          "author": "広路なゆる/蕨野くげ子/ジョンディー",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0503/9784253020503_1_2.jpg?_ex=200x200",
-          "isbn": "9784253020503",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754197%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F179499b269e835a89c476280958df3ef%2F"
-        },
-        {
-          "title": "ファンタジー銀河　〜何で宇宙にゴブリンやオークが居るんだ〜　2",
-          "author": "月汰元/新井春巻/布施龍太",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0480/9784253020480_1_11.jpg?_ex=200x200",
-          "isbn": "9784253020480",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754224%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fc4bed647441f336bb6c93b047475cd81%2F"
-        },
-        {
-          "title": "側妃になったけど、別に愛さなくていいですよ？　〜他力本願な妃はぐーたらライフを送りたい〜　2",
-          "author": "小針ゆき子/奥村さとり",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0510/9784253020510_1_20.jpg?_ex=200x200",
-          "isbn": "9784253020510",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754198%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fded11d43c5603e81b8b5754c1385c4dd%2F"
-        },
-        {
-          "title": "スキルツリーの解錠者　〜A級パーティーを追放されたので【解錠＆施錠】を活かして、S級冒険者を目指す〜　2",
-          "author": "錬金王/壱松けい",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0534/9784253020534_1_30.jpg?_ex=200x200",
-          "isbn": "9784253020534",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754200%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F57cd6efb6572389199f91aac3e25fe02%2F"
-        },
-        {
-          "title": "その伯爵令嬢、“替え玉”につき　替え玉のわたし（妹）が侯爵に溺愛されるなんてあり得ません　1",
-          "author": "とんこつ毬藻/はやぶち伶子",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0497/9784253020497_1_13.jpg?_ex=200x200",
-          "isbn": "9784253020497",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754234%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0fc6ca94aede3416829491d5ae20d7c5%2F"
-        },
-        {
-          "title": "破滅の女帝　11回目の人生は冷酷女帝を辞めて処刑エンドを回避します　1",
-          "author": "日之影ソラ/にびせいじ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0367/9784253020367_1_13.jpg?_ex=200x200",
-          "isbn": "9784253020367",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754210%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fb2211f24370331748f910add45c6e792%2F"
-        },
-        {
-          "title": "黒豹閣下の婚約者　1",
-          "author": "三沢ケイ/渚紗なぎ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0527/9784253020527_1_20.jpg?_ex=200x200",
-          "isbn": "9784253020527",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18754199%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fb5dbbdac092e3c44b0b0a98343967284%2F"
-        }
-      ]
-    },
-    {
-      "name": "リイド社",
-      "titles": [
-        {
-          "title": "ワイド版鬼平犯科帳（66巻）",
-          "author": "さいとう・たかを/池波　正太郎",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2398/9784845872398_1_3.jpg?_ex=200x200",
-          "isbn": "9784845872398",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18760530%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768468%2F",
           "kindle": "",
           "kobo": ""
         },
         {
-          "title": "さいとう・たかを時代劇画選集　仕掛人藤枝梅安（拾弐）",
-          "author": "さいとう・たかを",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2411/9784845872411_1_2.jpg?_ex=200x200",
-          "isbn": "9784845872411",
+          "title": "大室家 (9) 特装版",
+          "author": "なもり",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1784/9784825101784_1_2.jpg?_ex=200x200",
+          "isbn": "9784825101784",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18854678%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768471%2F",
           "kindle": "",
-          "kobo": ""
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F2a1c84d027e6313b9b335f4e351f3142%2F"
         },
         {
-          "title": "剣客商売プレミアム　剣",
-          "author": "大島やすいち/池波正太郎",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2466/9784845872466_1_2.jpg?_ex=200x200",
-          "isbn": "9784845872466",
+          "title": "大室家 (9)",
+          "author": "なもり",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1777/9784825101777_1_2.jpg?_ex=200x200",
+          "isbn": "9784825101777",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18854679%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18768472%2F",
           "kindle": "",
-          "kobo": ""
-        },
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F8193c56bcc7e3c4a9a1272efc8d08ccc%2F"
+        }
+      ]
+    },
+    {
+      "name": "MUGENUP",
+      "titles": [
         {
-          "title": "コミック乱セレクション　無私無偏",
+          "title": "ファンタシースターオンライン2 es ぎゅ!!!",
+          "author": "ニャロメロン/セガ",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5711/9784434385711_1_5.jpg?_ex=200x200",
+          "isbn": "9784434385711",
+          "amazon": "",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18791725%2F",
+          "kindle": "",
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F38e4a3b0bf203b51a64b3a910d87b7e6%2F"
+        }
+      ]
+    },
+    {
+      "name": "モーターマガジン社",
+      "titles": [
+        {
+          "title": "望月三起也 ワイルド7 コンプリート",
           "author": "",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2404/9784845872404_1_2.jpg?_ex=200x200",
-          "isbn": "9784845872404",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7506/9784862797506_1_2.jpg?_ex=200x200",
+          "isbn": "9784862797506",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18854680%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18824519%2F",
           "kindle": "",
           "kobo": ""
         }
       ]
     },
     {
-      "name": "スクウェア・エニックス",
+      "name": "三栄",
       "titles": [
         {
-          "title": "魔法科高校の劣等生　インベージョン編（4）(完)",
-          "author": "佐島勤/石田可奈/竹田羽角",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8408/9784301008408_1_2.jpg?_ex=200x200",
-          "isbn": "9784301008408",
+          "title": "ドカベン　20巻",
+          "author": "水島新司",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4114/9784779654114_1_3.jpg?_ex=200x200",
+          "isbn": "9784779654114",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18772246%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18824638%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F5e40075485ab33f7bc961422ca338fc0%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F97d95eb9cd43302eb66890c9e8a4d5e4%2F"
         },
         {
-          "title": "魔法科高校の劣等生　インベージョン編（3）",
-          "author": "佐島勤/石田可奈/竹田羽角",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8392/9784301008392_1_2.jpg?_ex=200x200",
-          "isbn": "9784301008392",
+          "title": "ドカベン　19巻",
+          "author": "水島新司",
+          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4107/9784779654107_1_3.jpg?_ex=200x200",
+          "isbn": "9784779654107",
           "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18772204%2F",
+          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18824637%2F",
           "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F22bda96c8b42346dae0b13fa7c33d22e%2F"
-        }
-      ]
-    },
-    {
-      "name": "玄光社",
-      "titles": [
-        {
-          "title": "青い目のこねこのシャー子",
-          "author": "ニャンフスキー",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2368/9784768332368_1_15.jpg?_ex=200x200",
-          "isbn": "9784768332368",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18780603%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F1b4e461d348c3a8d8bd1f94c05106c9f%2F"
-        }
-      ]
-    },
-    {
-      "name": "新書館",
-      "titles": [
-        {
-          "title": "チャンネル・ヴァンパイア（1）",
-          "author": "びっけ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4155/9784403624155_1_2.jpg?_ex=200x200",
-          "isbn": "9784403624155",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18791724%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F3a1299257302370286f6b480b99fc9b9%2F"
-        }
-      ]
-    },
-    {
-      "name": "太田出版",
-      "titles": [
-        {
-          "title": "守ってあげたい",
-          "author": "山本 直樹",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3455/9784778323455_1_31.jpg?_ex=200x200",
-          "isbn": "9784778323455",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802327%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ffb93b720911037559c8976e02eeda0d1%2F"
-        }
-      ]
-    },
-    {
-      "name": "光文社",
-      "titles": [
-        {
-          "title": "木洩れ日のひと　7",
-          "author": "川端志季",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1953/9784334111953_1_3.jpg?_ex=200x200",
-          "isbn": "9784334111953",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802579%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fa2a70af82bd03ec4a71de6c89d24ad23%2F"
-        }
-      ]
-    },
-    {
-      "name": "東京漫画社",
-      "titles": [
-        {
-          "title": "Cab vol.106",
-          "author": "アンソロジー",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5728/9784864425728_1_2.jpg?_ex=200x200",
-          "isbn": "9784864425728",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18802664%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fc86ddd4c37d031a78d1dc3e9960ca435%2F"
-        }
-      ]
-    },
-    {
-      "name": "アルファポリス",
-      "titles": [
-        {
-          "title": "令嬢はまったりをご所望。（9）",
-          "author": "梶山ミカ/三月べに",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6541/9784434386541_1_4.jpg?_ex=200x200",
-          "isbn": "9784434386541",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826583%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fb9313fa3bf6d37f38768eb9ec12ce667%2F"
-        },
-        {
-          "title": "令嬢はまったりをご所望。（9）",
-          "author": "梶山ミカ/三月べに",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6541/9784434386541_1_4.jpg?_ex=200x200",
-          "isbn": "9784434386541",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826583%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fb9313fa3bf6d37f38768eb9ec12ce667%2F"
-        },
-        {
-          "title": "公爵家に生まれて初日に跡継ぎ失格の烙印を押されましたが今日も元気に生きてます！（7）",
-          "author": "世鳥アスカ/小択出新都",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6534/9784434386534_1_4.jpg?_ex=200x200",
-          "isbn": "9784434386534",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826582%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F0a152e57f343379592aa07f260a916d0%2F"
-        },
-        {
-          "title": "消滅した悪役令嬢（3）",
-          "author": "北川あじゅ/マロン株式",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8454/9784434378454_1_3.jpg?_ex=200x200",
-          "isbn": "9784434378454",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826533%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fc08b4056308832058a0ab273d1283d2c%2F"
-        },
-        {
-          "title": "目が覚めました（2）",
-          "author": "あしかうみ/鬱沢色素",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0229/9784434370229_1_3.jpg?_ex=200x200",
-          "isbn": "9784434370229",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826450%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fe5ac2e530be03d5185efcdbeb24e9688%2F"
-        },
-        {
-          "title": "推しを味方に付けたら最強だって知ってましたか？（2）",
-          "author": "天満あこ/やきいもほくほく",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2285/9784434372285_1_4.jpg?_ex=200x200",
-          "isbn": "9784434372285",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826313%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F250821d0a4f83848a41ffa0742214846%2F"
-        },
-        {
-          "title": "推しを味方に付けたら最強だって知ってましたか？（2）",
-          "author": "天満あこ/やきいもほくほく",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2285/9784434372285_1_4.jpg?_ex=200x200",
-          "isbn": "9784434372285",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826313%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F250821d0a4f83848a41ffa0742214846%2F"
-        },
-        {
-          "title": "処刑された悪役令嬢は、時を遡り復讐する。（1）",
-          "author": "深なずな/しげむろゆうき",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3633/9784434373633_1_4.jpg?_ex=200x200",
-          "isbn": "9784434373633",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826462%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fd8ff5df2cfb230e3b770d2ad62dab3aa%2F"
-        },
-        {
-          "title": "側妃のお仕事は終了です。（1）",
-          "author": "とぐろなす/火野村志紀",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3671/9784434373671_1_4.jpg?_ex=200x200",
-          "isbn": "9784434373671",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826461%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Ffac0250f89293a5d8b16eca0c973b146%2F"
-        },
-        {
-          "title": "月華後宮伝（1）",
-          "author": "柚和 杏/織部ソマリ",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9742/9784434369742_1_3.jpg?_ex=200x200",
-          "isbn": "9784434369742",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826524%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2Fdfdd032eb0cc398a874494c864b3e063%2F"
-        },
-        {
-          "title": "婚約者を奪われた伯爵令嬢、そろそろ好きに生きてみようと思います（1）",
-          "author": "かやなぎ一羽/矢野りと",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7076/9784434367076_1_4.jpg?_ex=200x200",
-          "isbn": "9784434367076",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826526%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F064953718c8f3349885df30fa24d06cd%2F"
-        },
-        {
-          "title": "後宮の隠れ薬師は闇夜を照らす（1）",
-          "author": "熊井れん/絹乃",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5361/9784434375361_1_3.jpg?_ex=200x200",
-          "isbn": "9784434375361",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18826645%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F4cbd7cb297373130bc0a469b3af987f0%2F"
-        }
-      ]
-    },
-    {
-      "name": "彩図社",
-      "titles": [
-        {
-          "title": "怪奇！死肉の男",
-          "author": "日野 日出志/寺井 広樹",
-          "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8398/9784801308398_1_2.jpg?_ex=200x200",
-          "isbn": "9784801308398",
-          "amazon": "",
-          "rakuten": "https://hb.afl.rakuten.co.jp/hgc/g00q072n.e5b0je86.g00q072n.e5b0k433/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F18841019%2F",
-          "kindle": "",
-          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F888b6d49469f3201a77d2e684aa4a95a%2F"
+          "kobo": "https://hb.afl.rakuten.co.jp/hgc/g00reb4n.e5b0j7c8.g00reb4n.e5b0k622/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frk%2F97d95eb9cd43302eb66890c9e8a4d5e4%2F"
         }
       ]
     }
